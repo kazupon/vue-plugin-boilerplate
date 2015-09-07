@@ -1,0 +1,28 @@
+{
+  "name": "vue-plugin-boilerplate",
+  "version": "1.0.0",
+  "description": "Biolerplate for Vue.js plugin",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazupon/vue-plugin-boilerplate.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "boilerplate",
+    "plugin"
+  ],
+  "author": "kazuya kawaguchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazupon/vue-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kazupon/vue-plugin-boilerplate#readme"
+}
