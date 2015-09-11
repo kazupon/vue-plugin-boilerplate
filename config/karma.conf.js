@@ -33,14 +33,14 @@ module.exports = function (config) {
         loaders: [{
           test: /\.js$/,
           exclude: /node_modules|vue\src/,
-          loader: 'babel'
+          loader: 'babel',
+          query: {
+            plugins: ['babel-plugin-espower']
+          }
         }],
         postLoaders: [{
           test: /\.json$/,
           loader: 'json'
-        }, {
-          test: /\.js$/,
-          loader: 'webpack-espower-loader'
         }, {
           test: /\.js$/,
           exclude: /test|node_modules|vue\src/,
