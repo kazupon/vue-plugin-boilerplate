@@ -6,7 +6,11 @@
 
   "globals": {
     "describe": true,
-    "it": true
+    "it": true,
+    "before": true,
+    "after": true,
+    "beforeEach": true,
+    "afterEach": true
   },
 
   "ecmaFeatures": {

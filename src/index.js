@@ -1,3 +1,5 @@
-export default function (a, b) {
-  return a + b
+export default function (Vue, options = {}) {
+  Vue.prototype.$add = (a, b) => {
+    return a + b
+  }
 }
