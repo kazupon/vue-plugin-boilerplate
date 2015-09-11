@@ -32,7 +32,7 @@ module.exports = function (config) {
       module: {
         loaders: [{
           test: /\.js$/,
-          exclude: /node_modules|vue\src/,
+          exclude: /node_modules/,
           loader: 'babel',
           query: {
             plugins: ['babel-plugin-espower']
@@ -43,24 +43,10 @@ module.exports = function (config) {
           loader: 'json'
         }, {
           test: /\.js$/,
-          exclude: /test|node_modules|vue\src/,
+          exclude: /test|node_modules/,
           loader: 'istanbul-instrumenter'
         }]
       }
-      /*
-      espower: {
-        destructive: true,
-        patterns: [
-          'assert(value, [message])',
-          'assert.ok(value, [message])',
-          'assert.equal(actual, expected, [message])',
-          'assert.notEqual(actual, expected, [message])',
-          'assert.strictEqual(actual, expected, [message])',
-          'assert.notStrictEqual(actual, expected, [message])',
-          'assert.deepEqual(actual, expected, [message])',
-          'assert.notDeepEqual(actual, expected, [message])'
-        ]
-      }*/
     },
 
     webpackMiddleware: {
