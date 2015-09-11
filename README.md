@@ -2,9 +2,7 @@
 
 Boilerplate for Vue.js plugin
 
-> NOTE: WIP
-
-## Using tools
+# Using tools
 - Transpiler
     - babel
 - Linter
