@@ -23,7 +23,7 @@ Boilerplate for Vue.js plugin
 # Usage
 
 ```sh
-$ git@github.com:kazupon/vue-plugin-boilerplate.git
+$ git clone git@github.com:kazupon/vue-plugin-boilerplate.git
 $ cd vue-plugin-boilerplate
 $ npm install
 ```
