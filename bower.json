@@ -24,7 +24,6 @@
     "node_modules",
     "config",
     "bower_components",
-    "src",
     "lib",
     "test",
     "*.js",
