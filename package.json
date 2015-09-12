@@ -2,7 +2,10 @@
   "name": "vue-plugin-boilerplate",
   "description": "Boilerplate for Vue.js plugin",
   "version": "1.0.0",
-  "author": "kazuya kawaguchi",
+  "author": {
+    "name": "kazuya kawaguchi",
+    "email": "kawakazu80@gmail.com"
+  },
   "bugs": {
     "url": "https://github.com/kazupon/vue-plugin-boilerplate/issues"
   },
@@ -27,9 +30,6 @@
     "vue": "^0.12.13",
     "webpack": "^1.12.1"
   },
-  "files": [
-    "lib"
-  ],
   "homepage": "https://github.com/kazupon/vue-plugin-boilerplate#readme",
   "keywords": [
     "boilerplate",
@@ -38,17 +38,17 @@
     "vuejs"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/vue-plugin-boilerplate.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazupon/vue-plugin-boilerplate.git"
   },
   "scripts": {
-    "lint": "eslint src test config",
     "build": "babel src --out-dir lib --source-maps-inline",
     "bundle": "webpack --config config/webpack.conf.js && webpack --config config/webpack.min.conf.js",
+    "clean": "rm -rf lib && rm -rf coverage && rm -rf dist",
+    "lint": "eslint src test config",
     "test": "karma start config/karma.conf.js",
-    "watch": "babel src --out-dir lib --watch --source-maps-inline",
-    "clean": "rm -rf lib && rm -rf coverage && rm -rf dist"
+    "watch": "babel src --out-dir lib --watch --source-maps-inline"
   }
 }

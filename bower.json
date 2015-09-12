@@ -17,6 +17,7 @@
     "vue",
     "vuejs"
   ],
+  "main": "dist/vue-plugin-boilerplate.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
