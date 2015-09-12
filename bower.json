@@ -1,0 +1,34 @@
+{
+  "name": "vue-plugin-boilerplate",
+  "description": "Boilerplate for Vue.js plugin",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kazupon/vue-plugin-boilerplate#readme",
+  "authors": [
+    "kazuya kawaguchi <kawakazu80@gmail.com>"
+  ],
+  "moduleType": [
+    "globals",
+    "node",
+    "amd"
+  ],
+  "keywords": [
+    "boilerplate",
+    "plugin",
+    "vue",
+    "vuejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "config",
+    "bower_components",
+    "src",
+    "lib",
+    "test",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "*.md"
+  ]
+}
