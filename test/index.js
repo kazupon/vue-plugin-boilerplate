@@ -1,6 +1,6 @@
 import assert from 'power-assert'
 import Vue from 'vue'
-import plugin from '../src/index.js'
+import plugin from '../src/index'
 
 describe('$add', () => {
   let vm
