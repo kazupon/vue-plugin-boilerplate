@@ -8,7 +8,7 @@ Boilerplate for Vue.js plugin
 - Linter
     - eslint
 - Bundler
-    - webpack
+    - webpack, rollup
 - Test Assertion
     - power-assert
 - Test Fremework
@@ -19,6 +19,21 @@ Boilerplate for Vue.js plugin
     - istanbul
 - Headless Browser
     - phantomjs
+
+# Bunlded ModuleName
+Defined the came-case into global.
+
+ex:
+```
+- package.json
+vue-plugin-boilerplate
+
+- bundled
+VuePluginBoilerplate
+
+- javascript usage example
+Vue.use(VuePluginBoilerplate)
+```
 
 # Usage
 
