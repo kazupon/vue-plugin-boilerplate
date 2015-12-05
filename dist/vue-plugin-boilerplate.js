@@ -1,5 +1,5 @@
 /*!
- * vue-plugin-boilerplate v1.0.0
+ * vue-plugin-boilerplate v1.1.0
  * (c) 2015 kazuya kawaguchi
  * Released under the MIT License.
  */
