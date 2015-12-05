@@ -1,4 +1,4 @@
-Vue.use(window['vue-plugin-boilerplate'].default)
+Vue.use(VuePluginBoilerplate)
 
 new Vue({
   data: { a: 1, b: 2 },
