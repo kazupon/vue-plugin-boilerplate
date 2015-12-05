@@ -1,7 +1,7 @@
 {
   "name": "vue-plugin-boilerplate",
   "description": "Boilerplate for Vue.js plugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"
@@ -38,9 +38,11 @@
   "files": [
     "dist/vue-plugin-boilerplate.js",
     "dist/vue-plugin-boilerplate.min.js",
+    "dist/vue-plugin-boilerplate.common.js",
     "src"
   ],
   "homepage": "https://github.com/kazupon/vue-plugin-boilerplate#readme",
+  "jsnext:main": "src/index.js",
   "keywords": [
     "boilerplate",
     "plugin",
@@ -48,7 +50,7 @@
     "vuejs"
   ],
   "license": "MIT",
-  "main": "dist/vue-plugin-boilerplate.js",
+  "main": "dist/vue-plugin-boilerplate.common.js",
   "private": true,
   "repository": {
     "type": "git",
