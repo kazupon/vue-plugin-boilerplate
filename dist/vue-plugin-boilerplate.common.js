@@ -1,5 +1,5 @@
 /*!
- * vue-plugin-boilerplate v1.2.0
+ * vue-plugin-boilerplate v1.3.0
  * (c) 2015 kazuya kawaguchi
  * Released under the MIT License.
  */
@@ -13,6 +13,6 @@ function plugin(Vue) {
   };
 }
 
-plugin.version = '1.2.0';
+plugin.version = '1.3.0';
 
 module.exports = plugin;

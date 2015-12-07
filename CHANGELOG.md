@@ -1,3 +1,20 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v1.2.0...v1.3.0) (2015-12-07)
+
+
+### Bug Fixes
+
+* **build:** remove eslint errors ([54e1f1e](https://github.com/kazupon/vue-plugin-boilerplate/commit/54e1f1e))
+* **karma:** fix cannot karma test ([b72bcb6](https://github.com/kazupon/vue-plugin-boilerplate/commit/b72bcb6))
+* **package:** update scripts ([cf2c295](https://github.com/kazupon/vue-plugin-boilerplate/commit/cf2c295))
+
+### Features
+
+* **dev:** add eslint loader ([760c169](https://github.com/kazupon/vue-plugin-boilerplate/commit/760c169))
+* **test:** add unit test for brower with webpack-dev-server ([42865bc](https://github.com/kazupon/vue-plugin-boilerplate/commit/42865bc))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v1.1.0...v1.2.0) (2015-12-05)
 
