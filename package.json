@@ -26,6 +26,7 @@
     "karma-sourcemap-loader": "^0.3.5",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.4",
+    "mocha-loader": "^0.7.1",
     "phantomjs": "^1.9.18",
     "power-assert": "^1.2.0",
     "rollup": "^0.21.1",
@@ -33,7 +34,8 @@
     "rollup-plugin-replace": "^1.1.0",
     "uglify-js": "^2.6.1",
     "vue": "^1.0.10",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "files": [
     "dist/vue-plugin-boilerplate.js",
@@ -59,6 +61,7 @@
   "scripts": {
     "build": "node config/build.js",
     "clean": "rm -rf coverage && rm -rf dist",
+    "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     "lint": "eslint src test config",
     "test": "karma start config/karma.conf.js",
     "watch": "webpack --watch --config config/webpack.conf.js"
