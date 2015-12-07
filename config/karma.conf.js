@@ -13,7 +13,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../test/**/*.js'
+      '../test/index.js'
     ],
 
     // list of files to exclude
@@ -23,20 +23,21 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '../src/**/*.js': ['webpack', 'sourcemap'],
-      '../test/**/*.js': ['webpack', 'sourcemap']
+      '../test/index.js': ['webpack']
     },
 
     webpack: {
-      devtool: 'inline-source-map',
+      devtool: 'source-map',
       module: {
         loaders: [{
           test: /\.js$/,
-          exclude: /node_modules/,
+          exclude: /node_modules|vue\/dist/,
           loader: 'babel',
           query: {
             presets: ['es2015'],
-            plugins: ['babel-plugin-espower']
+            plugins: [
+              ['babel-plugin-espower']
+            ]
           }
         }],
         postLoaders: [{
@@ -44,7 +45,7 @@ module.exports = function (config) {
           loader: 'json'
         }, {
           test: /\.js$/,
-          exclude: /test|node_modules/,
+          exclude: /test|node_modules|vue\/dist/,
           loader: 'istanbul-instrumenter'
         }]
       }
