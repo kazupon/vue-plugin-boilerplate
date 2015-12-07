@@ -63,7 +63,7 @@
     "clean": "rm -rf coverage && rm -rf dist",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     "lint": "eslint src test config",
-    "test": "karma start config/karma.conf.js",
-    "watch": "webpack --watch --config config/webpack.conf.js"
+    "unit": "karma start config/karma.conf.js",
+    "test": "npm run lint && npm run unit"
   }
 }
