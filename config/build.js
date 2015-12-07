@@ -20,7 +20,7 @@ rollup.rollup({
   entry: 'src/index.js',
   plugins: [
     babel({
-      presets: ['es2015-rollup'],
+      presets: ['es2015-rollup']
     })
   ]
 })
@@ -39,7 +39,7 @@ rollup.rollup({
         'process.env.NODE_ENV': "'development'"
       }),
       babel({
-        presets: ['es2015-rollup'],
+        presets: ['es2015-rollup']
       })
     ]
   })
@@ -60,7 +60,7 @@ rollup.rollup({
         'process.env.NODE_ENV': "'production'"
       }),
       babel({
-        presets: ['es2015-rollup'],
+        presets: ['es2015-rollup']
       })
     ]
   })
