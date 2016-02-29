@@ -1,3 +1,9 @@
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v1.3.0...v1.3.1) (2016-02-29)
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v1.2.0...v1.3.0) (2015-12-07)
 
