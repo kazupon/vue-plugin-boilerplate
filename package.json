@@ -15,9 +15,12 @@
     "babel-plugin-espower": "^2.0.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-es2015-rollup": "^1.0.0",
+    "conventional-changelog-cli": "^1.1.1",
+    "conventional-github-releaser": "^1.1.2",
     "eslint": "^2.8.0",
     "eslint-config-vue": "^1.0.0",
     "eslint-loader": "^1.3.0",
+    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git",
     "istanbul-instrumenter-loader": "^0.1.3",
     "json-loader": "^0.5.4",
     "karma": "^0.13.9",
@@ -62,9 +65,11 @@
   },
   "scripts": {
     "build": "node config/build.js",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -n ./node_modules/git-commit-message-convention/convention.js",
     "clean": "rm -rf coverage && rm -rf dist",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     "lint": "eslint src test config",
+    "release": "conventional-github-releaser -n ./node_modules/git-commit-message-convention/convention.js",
     "test": "npm run lint && npm run unit",
     "unit": "karma start config/karma.conf.js"
   }
