@@ -10,67 +10,29 @@
     "url": "https://github.com/kazupon/vue-plugin-boilerplate/issues"
   },
   "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-plugin-espower": "^2.0.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-es2015-rollup": "^1.0.0",
     "conventional-changelog-cli": "^1.1.1",
     "conventional-github-releaser": "git://github.com/kazupon/conventional-github-releaser.git#fix/config",
-    "eslint": "^2.8.0",
-    "eslint-config-vue": "^1.0.0",
-    "eslint-loader": "^1.3.0",
-    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git",
-    "istanbul-instrumenter-loader": "^0.1.3",
-    "json-loader": "^0.5.4",
-    "karma": "^0.13.9",
-    "karma-coverage": "^0.5.2",
-    "karma-mocha": "^0.2.0",
-    "karma-mocha-reporter": "^1.1.1",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "karma-sourcemap-loader": "^0.3.5",
-    "karma-webpack": "^1.7.0",
-    "mocha": "^2.3.4",
-    "mocha-loader": "^0.7.1",
-    "phantomjs": "^1.9.18",
-    "power-assert": "^1.2.0",
-    "rollup": "^0.21.1",
-    "rollup-plugin-babel": "^2.2.0",
-    "rollup-plugin-replace": "^1.1.0",
-    "uglify-js": "^2.6.1",
-    "vue": "^1.0.10",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git"
   },
   "files": [
-    "dist/vue-plugin-boilerplate.js",
-    "dist/vue-plugin-boilerplate.min.js",
-    "dist/vue-plugin-boilerplate.common.js",
-    "src"
+    "template"
   ],
   "homepage": "https://github.com/kazupon/vue-plugin-boilerplate#readme",
-  "jsnext:main": "src/index.js",
   "keywords": [
     "boilerplate",
     "plugin",
+    "template",
     "vue",
     "vuejs"
   ],
   "license": "MIT",
-  "main": "dist/vue-plugin-boilerplate.common.js",
   "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazupon/vue-plugin-boilerplate.git"
   },
   "scripts": {
-    "build": "node config/build.js",
     "changelog": "conventional-changelog -i CHANGELOG.md -s -n ./node_modules/git-commit-message-convention/convention.js",
-    "clean": "rm -rf coverage && rm -rf dist",
-    "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
-    "lint": "eslint src test config",
-    "release": "conventional-github-releaser -n ./node_modules/git-commit-message-convention/convention.js",
-    "test": "npm run lint && npm run unit",
-    "unit": "karma start config/karma.conf.js"
+    "release": "conventional-github-releaser -n ./node_modules/git-commit-message-convention/convention.js"
   }
 }
