@@ -19,7 +19,7 @@ It’s up to you !!
 - Test Assertion
     - power-assert
 - Test Fremework
-    - mocha
+    - jasmine
 - Test Runner
     - karma
 - Test Coverage
