@@ -13,6 +13,7 @@
   {{/unless_eq}}
   "devDependencies": {
     "babel-core": "^6.2.1",
+    "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.0",
     "babel-plugin-coverage": "^1.0.0",
     "babel-plugin-espower": "^2.0.0",

@@ -1,13 +1,10 @@
 {
+  "env": {
+    "jasmine": true
+  },
   "globals": {
-    "describe": true,
-    "context": true,
-    "it": true,
-    "before": true,
-    "after": true,
-    "beforeEach": true,
-    "afterEach": true,
-    "process": true
+    "waitForUpdate": true,
+    "assert": true
   },
   "extends": "vue"
 }

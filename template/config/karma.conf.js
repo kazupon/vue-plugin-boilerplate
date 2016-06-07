@@ -17,7 +17,7 @@ module.exports = function (config) {
         loaders: [{
           test: /\.js$/,
           exclude: /node_modules|vue\/dist/,
-          loader: 'babel',
+          loader: 'babel!eslint',
           query: {
             presets: ['es2015'],
             plugins: [
