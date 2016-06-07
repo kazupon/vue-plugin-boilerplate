@@ -2,7 +2,14 @@
 
 Boilerplate for Vue.js plugin
 
-# Using tools
+## Usage
+
+    $ npm i -g vue-cli
+    $ vue init kazupon/vue-plugin-boilerplate vue-hello-plugin
+
+It’s up to you !!
+
+## Using tools
 - Transpiler
     - babel
 - Linter
@@ -20,12 +27,12 @@ Boilerplate for Vue.js plugin
 - Headless Browser
     - phantomjs
 
-# Bunlded ModuleName
+## Bunlded ModuleName
 Defined the came-case into global.
 
 ex:
 ```
-- package.json
+- `name` of package.json
 vue-plugin-boilerplate
 
 - bundled
@@ -34,16 +41,6 @@ VuePluginBoilerplate
 - javascript usage example
 Vue.use(VuePluginBoilerplate)
 ```
-
-# Usage
-
-```sh
-$ git clone git@github.com:kazupon/vue-plugin-boilerplate.git
-$ cd vue-plugin-boilerplate
-$ npm install
-```
-
-It’s up to you !!
 
 # License
 
