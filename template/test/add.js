@@ -1,7 +1,6 @@
 import assert from 'power-assert'
 import Vue from 'vue'
 
-
 describe('$add', () => {
   let vm
 
