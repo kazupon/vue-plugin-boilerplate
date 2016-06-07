@@ -1,4 +1,3 @@
-import assert from 'power-assert'
 import Vue from 'vue'
 
 describe('$add', () => {
@@ -9,8 +8,10 @@ describe('$add', () => {
   })
 
   describe('1 + 1', () => {
-    it('should be 2', () => {
-      assert(vm.$add(1, 1) === 3)
+    it('should be 2', done => {
+      waitForUpdate(() => {
+        assert(vm.$add(1, 1) === 3)
+      }).then(done)
     })
   })
 })

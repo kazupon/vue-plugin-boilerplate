@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import plugin from '../src/index'
 
-Vue.use(plugin)
+// import all helpers
+const helpersContext = require.context('./helpers', true)
+helpersContext.keys().forEach(helpersContext)
 
-require('./add')
+// require all test files
+const testsContext = require.context('./unit', true)
+testsContext.keys().forEach(testsContext)
+
+Vue.use(plugin)

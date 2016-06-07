@@ -8,30 +8,30 @@
   },
   {{#unless_eq githubAccount ""}}
   "bugs": {
-    "url": "https://github.com/{{ github_account }}/{{ name }}/issues"
+    "url": "https://github.com/{{ githubAccount }}/{{ name }}/issues"
   },
   {{/unless_eq}}
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
+    "babel-plugin-coverage": "^1.0.0",
     "babel-plugin-espower": "^2.0.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-es2015-rollup": "^1.0.0",
     "eslint": "^2.8.0",
     "eslint-config-vue": "^1.0.0",
     "eslint-loader": "^1.3.0",
-    "istanbul-instrumenter-loader": "^0.1.3",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
     "json-loader": "^0.5.4",
     "karma": "^0.13.9",
-    "karma-coverage": "^0.5.2",
-    "karma-mocha": "^0.2.0",
-    "karma-mocha-reporter": "^1.1.1",
-    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.5",
+    "karma-spec-reporter": "^0.0.26",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.3.4",
-    "mocha-loader": "^0.7.1",
-    "phantomjs": "^1.9.18",
+    "phantomjs-prebuilt": "^2.1.1",
     "power-assert": "^1.2.0",
     "rollup": "^0.21.1",
     "rollup-plugin-babel": "^2.2.0",
@@ -48,7 +48,7 @@
     "src"
   ],
   {{#unless_eq githubAccount ""}}
-  "homepage": "https://github.com/{{ github_account }}/{{ name }}#readme",
+  "homepage": "https://github.com/{{ githubAccount }}/{{ name }}#readme",
   {{/unless_eq}}
   "jsnext:main": "src/index.js",
   "keywords": [
@@ -61,7 +61,7 @@
   {{#unless_eq githubAccount ""}}
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{ github_account }}/{{ name }}.git"
+    "url": "git+https://github.com/{{ githubAccount }}/{{ name }}.git"
   },
   {{/unless_eq}}
   "scripts": {
