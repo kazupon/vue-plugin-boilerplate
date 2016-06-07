@@ -1,7 +1,7 @@
 {
   "name": "vue-plugin-boilerplate",
   "description": "Boilerplate for Vue.js plugin",
-  "version": "1.3.2",
+  "version": "2.0.0",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"
