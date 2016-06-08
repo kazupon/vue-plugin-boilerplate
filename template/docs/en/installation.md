@@ -3,7 +3,7 @@
 {{#unless_eq githubAccount ""}}
 ## Direct Download
 
-See [dist folder](https://github.com/{{ githubAccount }}/{{ name }}/tree/master/dist). Note the dist files are always the latest stable - it's not update-to-date with the master branch source.
+See [dist folder](https://github.com/{{ githubAccount }}/{{ name }}/tree/{{ branch }}/dist). Note the dist files are always the latest stable - it's not update-to-date with the {{ branch }} branch source.
 {{/unless_eq}}
 
 ## NPM

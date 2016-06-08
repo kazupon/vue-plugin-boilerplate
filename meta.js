@@ -15,6 +15,12 @@ module.exports = {
       type: 'string',
       message: 'Author'
     },
+    branch: {
+      type: 'string',
+      required: true,
+      message: 'Development main branch name',
+      default: 'dev'
+    },
     githubAccount: {
       type: 'string',
       required: false,

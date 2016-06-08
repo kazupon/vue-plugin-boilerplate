@@ -5,14 +5,14 @@ Got a question?
 ===============
 The issue list of this repo is **exclusively** for bug reports and feature requests. For simple questions, please use the following resources:
 
-- Read the docs: https://github.com/{{ githubAccount }}/{{ name }}/blob/dev/README.md
+- Read the docs: https://github.com/{{ githubAccount }}/{{ name }}/blob/{{ branch }}/README.md
 - Ask in the Gitter chat room: https://gitter.im/vuejs/vue
 - Ask on the forums: http://forum.vuejs.org/
 - Look for/ask questions on stack overflow: https://stackoverflow.com/questions/ask?tags={{ name }}
 
 Reporting a bug?
 ================
-- Try to search for your issue, it may have already been answered or even fixed in the development branch.
+- Try to search for your issue, it may have already been answered or even fixed in the `{{ branch }}` branch.
 
 - Check if the issue is reproducible with the latest stable version of Vue. If you are using a pre-release, please indicate the specific version you are using.
 

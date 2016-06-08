@@ -4,7 +4,7 @@
   "pluginsConfig": {
     {{#unless_eq githubAccount ""}}
     "edit-link": {
-      "base": "https://github.com/{{ githubAccount }}/{{ name }}/tree/master/docs",
+      "base": "https://github.com/{{ githubAccount }}/{{ name }}/tree/{{ branch }}/docs",
       "label": "Edit This Page"
     },
     "github": {

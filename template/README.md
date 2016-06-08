@@ -27,7 +27,7 @@ See [here](http://{{ githubAccount }}.github.io/{{ name }}/){{/unless_eq}}{{/git
     npm test
 
 ## Changelog
-Details changes for each release are documented in the {{#unless_eq githubAccount ""}}[CHANGELOG.md](https://github.com/{{ githubAccount }}/{{ name }}/blob/master/CHANGELOG.md){{/unless_eq}}{{#if_eq githubAccount ""}}`CHANGELOG.md`{{/if_eq}}.
+Details changes for each release are documented in the {{#unless_eq githubAccount ""}}[CHANGELOG.md](https://github.com/{{ githubAccount }}/{{ name }}/blob/{{ branch }}/CHANGELOG.md){{/unless_eq}}{{#if_eq githubAccount ""}}`CHANGELOG.md`{{/if_eq}}.
 
 {{#issue}}
 ## Issues
@@ -38,11 +38,11 @@ Please make sure to read the [Issue Reporting Checklist](https://github.com/vuej
 {{#contribution}}Please make sure to read the [Contributing Guide](https://github.com/vuejs/vue/blob/dev/CONTRIBUTING.md) before making a pull request.
 {{/contribution}}
 - Fork it !
-- Create your top branch from `dev`: `git branch my-new-topic origin/dev`
+- Create your top branch from `{{ branch }}`: `git branch my-new-topic origin/{{ branch }}`
 - Commit your changes: `git commit -am 'Add some topic'`
 - Push to the branch: `git push origin my-new-topic`
 {{#unless_eq githubAccount ""}}
-- Submit a pull request to `dev` branch of `{{ githubAccount }}/{{ name }}` repository !
+- Submit a pull request to `{{ branch }}` branch of `{{ githubAccount }}/{{ name }}` repository !
 {{/unless_eq}}
 
 ## License
