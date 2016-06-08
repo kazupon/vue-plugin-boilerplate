@@ -1,3 +1,22 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v3.0.0...v4.0.0) (2016-06-08)
+
+
+### :star: New Features
+
+* add clean task ([006d9b2](https://github.com/kazupon/vue-plugin-boilerplate/commit/006d9b2))
+* add issue & contribution guide ([6274b4e](https://github.com/kazupon/vue-plugin-boilerplate/commit/6274b4e))
+* add issue template ([a8b7076](https://github.com/kazupon/vue-plugin-boilerplate/commit/a8b7076))
+* main branch asking ([fbb8802](https://github.com/kazupon/vue-plugin-boilerplate/commit/fbb8802))
+* setup documentation with gitbook ([78a57a8](https://github.com/kazupon/vue-plugin-boilerplate/commit/78a57a8))
+
+
+### :zap: Improvements
+
+* **build:** automatically dist directory creating ([9030e27](https://github.com/kazupon/vue-plugin-boilerplate/commit/9030e27))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v2.0.0...v3.0.0) (2016-06-08)
 
