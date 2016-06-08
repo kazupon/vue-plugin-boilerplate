@@ -7,3 +7,7 @@ function plugin (Vue, options = {}) {
 plugin.version = '1.3.0'
 
 export default plugin
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin)
+}
