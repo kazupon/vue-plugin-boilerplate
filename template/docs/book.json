@@ -1,0 +1,21 @@
+{
+  "gitbook": "2.x.x",
+  "plugins": ["edit-link", "github", "advanced-emoji"],
+  "pluginsConfig": {
+    {{#unless_eq githubAccount ""}}
+    "edit-link": {
+      "base": "https://github.com/{{ githubAccount }}/{{ name }}/tree/master/docs",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/{{ githubAccount }}/{{ name }}/"
+    }
+    {{/unless_eq}}
+  },
+  "links": {
+    "sharing": {
+      "facebook": false,
+      "twitter": false
+    }
+  }
+}

@@ -2,6 +2,10 @@
 
 {{ description }}
 
+{{#gitbook}}{{#unless_eq githubAccount ""}}
+## Documentation
+See [here](http://{{ githubAccount }}.github.io/{{ name }}/)
+{{/unless_eq}}{{/gitbook}}
 
 ## Build Setup
 

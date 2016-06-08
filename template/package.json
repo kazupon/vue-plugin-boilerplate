@@ -22,6 +22,9 @@
     "eslint": "^2.8.0",
     "eslint-config-vue": "^1.0.0",
     "eslint-loader": "^1.3.0",
+    {{#gitbook}}
+    "gitbook-cli": "^2.2.0",
+    {{/gitbook}}
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "json-loader": "^0.5.4",
@@ -78,7 +81,16 @@
   "scripts": {
     "build": "NODE_ENV=production node config/build.js",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
+    {{#gitbook}}
+    "docs": "cd docs && gitbook serve",
+    {{#unless_eq githubAccount ""}}
+    "docs:deploy": "cd docs && rm -rf _book && gitbook build && cd _book && git init && git add -A && git commit -m 'update book' && git push -f git@github.com:{{ githubAccount }}/{{ name }}.git master:gh-pages && cd .. && cd ..",
+    {{/unless_eq}}
+    {{/gitbook}}
     "lint": "eslint src test config",
+    {{#gitbook}}
+    "postinstall": "cd docs && gitbook install && cd ..",
+    {{/gitbook}}
     "test": "npm run lint && npm run test:unit{{#e2e}} && npm run test:e2e{{/e2e}}",
     "test:cover": "NODE_ENV=development karma start config/karma.cover.conf.js",
     {{#e2e}}

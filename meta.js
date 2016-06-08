@@ -24,11 +24,16 @@ module.exports = {
     e2e: {
       type: 'confirm',
       message: 'Setup e2e tests?'
+    },
+    gitbook: {
+      type: 'confirm',
+      message: 'Setup gitbook documentaion?'
     }
   },
   filters: {
     "examples/**/*": 'e2e',
-    "test/e2e/**/*": 'e2e'
+    "test/e2e/**/*": 'e2e',
+    "docs/**/**": 'gitbook'
   },
   helpers: {
     nowYear: function () {
@@ -42,6 +47,11 @@ module.exports = {
       const startPosition = author.indexOf('<')
       const endPosition = author.indexOf('>')
       return author.slice(startPosition + 1, endPosition)
+    },
+    classify: function (str) {
+      return str.replace(/(?:^|[-_\/])(\w)/g, function (_, c) {
+        return c ? c.toUpperCase() : ''
+      })
     }
   }
 }
