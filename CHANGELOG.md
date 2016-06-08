@@ -1,3 +1,19 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v2.0.0...v3.0.0) (2016-06-08)
+
+
+### :boom: Breaking changes
+
+* **test:** change mocha to jasmine ([f28513d](https://github.com/kazupon/vue-plugin-boilerplate/commit/f28513d))
+
+
+### :star: New Features
+
+* auto installation ([fa588c5](https://github.com/kazupon/vue-plugin-boilerplate/commit/fa588c5))
+* e2e test ([ab20da7](https://github.com/kazupon/vue-plugin-boilerplate/commit/ab20da7))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v1.3.1...v2.0.0) (2016-06-07)
 
