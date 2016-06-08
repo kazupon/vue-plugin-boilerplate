@@ -6,6 +6,12 @@ var babel = require('rollup-plugin-babel')
 var replace = require('rollup-plugin-replace')
 var pack = require('../package.json')
 var banner = require('./banner')
+var exist = fs.existsSync
+var mkdir = fs.mkdirSync
+
+if (!exists('dist')) {
+  mkdir('dist')
+}
 
 // update main file
 var main = fs
