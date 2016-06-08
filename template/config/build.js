@@ -9,7 +9,7 @@ var banner = require('./banner')
 var exist = fs.existsSync
 var mkdir = fs.mkdirSync
 
-if (!exists('dist')) {
+if (!exist('dist')) {
   mkdir('dist')
 }
 
