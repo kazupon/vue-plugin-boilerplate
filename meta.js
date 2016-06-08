@@ -28,12 +28,21 @@ module.exports = {
     gitbook: {
       type: 'confirm',
       message: 'Setup gitbook documentaion?'
+    },
+    issue: {
+      type: 'confirm',
+      message: 'Setup issue guide?'
+    },
+    contribution: {
+      type: 'confirm',
+      message: 'Setup contribution guide?'
     }
   },
   filters: {
     "examples/**/*": 'e2e',
     "test/e2e/**/*": 'e2e',
-    "docs/**/**": 'gitbook'
+    "docs/**/**": 'gitbook',
+    "issue_template.md": 'issue'
   },
   helpers: {
     nowYear: function () {
