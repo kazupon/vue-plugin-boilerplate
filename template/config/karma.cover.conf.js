@@ -1,58 +1,9 @@
-var webpack = require('webpack')
+const base = require('./karma.base.conf')
 
-module.exports = function (config) {
-  config.set({
-    basePath: '',
-    frameworks: ['jasmine'],
-    files: [
-      '../test/index.js'
-    ],
-    exclude: [
-    ],
-    preprocessors: {
-      '../test/index.js': ['webpack', 'sourcemap']
-    },
-    webpack: {
-      module: {
-        preLoaders: [{
-          test: /\.js$/,
-          exclude: /node_modules|vue\/dist/,
-          loader: 'babel!eslint'
-        }],
-        loaders: [{
-          test: /\.js$/,
-          exclude: /node_modules|vue\/dist/,
-          loader: 'babel',
-          query: {
-            presets: ['es2015'],
-            plugins: [
-              ['babel-plugin-espower'],
-              ['coverage', { ignore: ['test/'] }]
-            ]
-          }
-        }],
-        postLoaders: [{
-          test: /\.json$/,
-          loader: 'json'
-        }]
-      },
-      plugins: [
-        new webpack.DefinePlugin({
-          'process.env': {
-            NODE_ENV: '"development"'
-          }
-        })
-      ],
-      devtool: '#inline-source-map'
-    },
-
-    webpackMiddleware: {
-      noInfo: true
-    },
-
-    reporters: [
-      'progress', 'coverage'
-    ],
+module.exports = config => {
+  const options = Object.assign(base, {
+    browsers: ['PhantomJS'],
+    reporters: ['progress', 'coverage'],
     coverageReporter: {
       reporters: [{
         type: 'lcov', dir: '../coverage'
@@ -60,12 +11,13 @@ module.exports = function (config) {
         type: 'text-summary', dir: '../coverage'
       }]
     },
-
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['PhantomJS'],
     singleRun: true
   })
+
+  // add babel-plugin-coverage for code intrumentation
+  options.webpack.module.loaders[0].query.plugins.push([
+    'coverage', { ignore: ['test/'] }
+  ])
+
+  config.set(options)
 }
