@@ -72,6 +72,9 @@
   ],
   "license": "MIT",
   "main": "dist/{{ name }}.common.js",
+  "engines": {
+    "node": ">= 6.0"
+  },
   {{#unless_eq githubAccount ""}}
   "repository": {
     "type": "git",
