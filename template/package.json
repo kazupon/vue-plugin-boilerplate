@@ -41,6 +41,13 @@
     "rollup-plugin-babel": "^2.2.0",
     "rollup-plugin-replace": "^1.1.0",
     "uglify-js": "^2.6.1",
+    {{#e2e}}
+    "chromedriver": "^2.21.2",
+    "cross-spawn": "^4.0.0",
+    "http-server": "^0.9.0",
+    "nightwatch": "^0.9.0",
+    "selenium-server": "2.53.0",
+    {{/e2e}}
     "vue": "^1.0.10",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
@@ -72,8 +79,11 @@
     "build": "NODE_ENV=production node config/build.js",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     "lint": "eslint src test config",
-    "test": "npm run lint && npm run test:unit",
+    "test": "npm run lint && npm run test:unit{{#e2e}} && npm run test:e2e{{/e2e}}",
     "test:cover": "NODE_ENV=development karma start config/karma.cover.conf.js",
+    {{#e2e}}
+    "test:e2e": "node test/e2e/runner.js",
+    {{/e2e}}
     "test:unit": "NODE_ENV=development karma start config/karma.unit.conf.js"
   }
 }

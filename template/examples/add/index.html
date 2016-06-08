@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>add example</title>
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+    <script src="../../dist/{{ name }}.js"></script>
+  </head>
+  <body>
+    <p>${ value }</p>
+    <script>
+      Vue.config.delimiters = ['${', '}']
+      var vm = new Vue({
+        el: 'body',
+        data: { value: 0 }
+      })
+      vm.value = vm.$add(1, 1)
+    </script>
+  </body>
+</html>

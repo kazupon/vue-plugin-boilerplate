@@ -20,7 +20,15 @@ module.exports = {
       required: false,
       message: 'GitHub Account',
       default: ''
+    },
+    e2e: {
+      type: 'confirm',
+      message: 'Setup e2e tests?'
     }
+  },
+  filters: {
+    "examples/**/*": 'e2e',
+    "test/e2e/**/*": 'e2e'
   },
   helpers: {
     nowYear: function () {
