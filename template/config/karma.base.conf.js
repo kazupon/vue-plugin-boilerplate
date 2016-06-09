@@ -36,13 +36,13 @@ const webpackConfig = {
 module.exports = {
   basePath: '',
   files: [
-    '../test/index.js'
+    '../test/unit/index.js'
   ],
   exclude: [
   ],
   frameworks: ['jasmine'],
   preprocessors: {
-    '../test/index.js': ['webpack', 'sourcemap']
+    '../test/unit/index.js': ['webpack', 'sourcemap']
   },
   webpack: webpackConfig,
   webpackMiddleware: {
