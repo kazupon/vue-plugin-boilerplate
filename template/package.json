@@ -83,7 +83,7 @@
   {{/unless_eq}}
   "scripts": {
     "build": "NODE_ENV=production node config/build.js",
-    "clean": "rm -rf coverage && rm -rf dist/*.*",
+    "clean": "rm -rf coverage && rm -rf dist/*.js*",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     {{#gitbook}}
     "docs": "cd docs && gitbook serve",
