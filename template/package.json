@@ -25,6 +25,7 @@
     {{#gitbook}}
     "gitbook-cli": "^2.2.0",
     {{/gitbook}}
+    "html-webpack-plugin": "^2.19.0",
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "json-loader": "^0.5.4",
@@ -53,7 +54,7 @@
     {{/e2e}}
     "vue": "^1.0.10",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-server": "^1.14.1"
   },
   "files": [
     "dist/{{ name }}.js",

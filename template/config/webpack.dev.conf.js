@@ -1,18 +1,18 @@
-var webpack = require('webpack')
+const webpack = require('webpack')
+const JasmineWebpackPlugin = require('./webpack.dev.plugin')
 
 module.exports = {
-  entry: 'mocha!./test/index.js',
+  entry: './test/unit/index.js',
   output: {
-    path: './test',
-    filename: 'specs.js',
+    path: './test/unit',
+    filename: 'tests.js',
     publicPath: '/'
   },
-  devtool: 'source-map',
   module: {
     preLoaders: [{
       test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader'
+      exclude: /node_modules|vue\/dist/,
+      loader: 'babel!eslint'
     }],
     loaders: [{
       test: /\.js$/,
@@ -21,7 +21,7 @@ module.exports = {
       query: {
         presets: ['es2015'],
         plugins: [
-          'babel-plugin-espower'
+          ['babel-plugin-espower']
         ]
       }
     }],
@@ -31,12 +31,19 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: './test',
+    contentBase: './',
     port: 8080,
     hot: true,
     inline: true
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"development"'
+      }
+    }),
+    new JasmineWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  devtool: 'source-map'
 }
