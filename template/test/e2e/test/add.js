@@ -3,7 +3,7 @@ module.exports = {
     browser
       .url('http://localhost:8080/examples/add/')
       .waitForElementVisible('p', 1000)
-      .assert.containsText('p', '2')
+      .assert.containsText('p', '3', 'You should be implemented !!')
       .end()
   }
 }
