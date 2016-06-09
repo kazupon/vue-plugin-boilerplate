@@ -26,7 +26,7 @@ It’s up to you !!
     - istanbul
 - Headless Browser
     - phantomjs
-- End-to-End Testa Fremework
+- End-to-End Test Fremework
     - nightwatch.js
 
 ## Bunlded ModuleName
