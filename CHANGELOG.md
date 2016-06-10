@@ -1,3 +1,13 @@
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v5.0.0...v6.0.0) (2016-06-10)
+
+
+### :star: New Features
+
+* support changelog and release tasks with conventional-changelog ([996a821](https://github.com/kazupon/vue-plugin-boilerplate/commit/996a821))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v4.0.0...v5.0.0) (2016-06-10)
 
