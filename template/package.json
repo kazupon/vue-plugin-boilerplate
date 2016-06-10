@@ -45,8 +45,8 @@
     "karma-webpack": "^1.7.0",
     "phantomjs-prebuilt": "^2.1.1",
     "power-assert": "^1.2.0",
-    "rollup": "^0.21.1",
-    "rollup-plugin-babel": "^2.2.0",
+    "rollup": "^0.26.3",
+    "rollup-plugin-babel": "^2.4.0",
     "rollup-plugin-replace": "^1.1.0",
     "uglify-js": "^2.6.1",
     {{#e2e}}
