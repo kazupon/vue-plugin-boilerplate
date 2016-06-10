@@ -35,6 +35,26 @@ module.exports = {
       type: 'confirm',
       message: 'Setup sauce tests?'
     },
+    conventional: {
+      type: 'confirm',
+      message: 'Setup conventional-changelog tasks?'
+    },
+    conventionalConfig: {
+      when: 'conventional',
+      type: 'list',
+      message: 'Choice a conventional-changelog preset',
+      choices: [
+        { name: 'none (configure it youreself)', value: 'none' },
+        { name: 'angular', value: 'angular' },
+        { name: 'atom', value: 'atom' },
+        { name: 'codemirror', value: 'codemirror' },
+        { name: 'ember', value: 'ember' },
+        { name: 'eslint', value: 'eslint' },
+        { name: 'express', value: 'express' },
+        { name: 'jquery', value: 'jquery' },
+        { name: 'jshint', value: 'jshint' }
+      ]
+    },
     gitbook: {
       type: 'confirm',
       message: 'Setup gitbook documentaion?'

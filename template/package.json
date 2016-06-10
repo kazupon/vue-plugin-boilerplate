@@ -20,6 +20,10 @@
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-es2015-rollup": "^1.0.0",
     "babel-preset-es2015-rollup-vue": "^1.1.0",
+    {{#conventional}}
+    "conventional-changelog-cli": "^1.1.1",
+    "conventional-github-releaser": "^1.1.2",
+    {{/conventional}}
     "eslint": "^2.8.0",
     "eslint-config-vue": "^1.0.0",
     "eslint-loader": "^1.3.0",
@@ -88,6 +92,10 @@
   {{/unless_eq}}
   "scripts": {
     "build": "NODE_ENV=production node config/build.js",
+    {{#conventional}}
+    "changelog": "conventional-changelog -i CHANGELOG.md -s {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
+    "release": "conventional-github-releaser {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
+    {{/conventional}}
     "clean": "rm -rf coverage && rm -rf dist/*.js*",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     {{#gitbook}}
