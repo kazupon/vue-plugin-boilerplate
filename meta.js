@@ -31,6 +31,10 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests?'
     },
+    sauce: {
+      type: 'confirm',
+      message: 'Setup sauce tests?'
+    },
     gitbook: {
       type: 'confirm',
       message: 'Setup gitbook documentaion?'

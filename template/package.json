@@ -36,6 +36,9 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-safari-launcher": "^1.0.0",
+    {{#sauce}}
+    "karma-sauce-launcher": "^1.0.0",
+    {{/sauce}}
     "karma-sourcemap-loader": "^0.3.5",
     "karma-spec-reporter": "^0.0.26",
     "karma-webpack": "^1.7.0",
@@ -96,6 +99,12 @@
     {{#gitbook}}
     "postinstall": "cd docs && gitbook install && cd ..",
     {{/gitbook}}
+    {{#sauce}}
+    "sauce": "npm run sauce:coolkids && npm run sauce:ie && npm run sauce:mobile",
+    "sauce:coolkids": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 0",
+    "sauce:ie": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 1",
+    "sauce:mobile": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 2",
+    {{/sauce}}
     "test": "npm run lint && npm run test:unit{{#e2e}} && npm run test:e2e{{/e2e}}",
     "test:cover": "NODE_ENV=development karma start config/karma.cover.conf.js",
     {{#e2e}}
