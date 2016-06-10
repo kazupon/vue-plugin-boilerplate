@@ -1,3 +1,20 @@
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v4.0.0...v5.0.0) (2016-06-10)
+
+
+### :star: New Features
+
+* **sauce:** support saucelabs setup ([5f212cd](https://github.com/kazupon/vue-plugin-boilerplate/commit/5f212cd))
+
+
+### :zap: Improvements
+
+* **build:** update building ([803c9f6](https://github.com/kazupon/vue-plugin-boilerplate/commit/803c9f6))
+* **dev:** support dev task ([7dec4ce](https://github.com/kazupon/vue-plugin-boilerplate/commit/7dec4ce))
+* **test:** unit test directory structure ([609b4ae](https://github.com/kazupon/vue-plugin-boilerplate/commit/609b4ae))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v3.0.0...v4.0.0) (2016-06-08)
 
