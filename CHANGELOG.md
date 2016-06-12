@@ -1,3 +1,13 @@
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v6.0.0...v7.0.0) (2016-06-12)
+
+
+### :star: New Features
+
+* flowtype setup ([f7b3d11](https://github.com/kazupon/vue-plugin-boilerplate/commit/f7b3d11))
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v5.0.0...v6.0.0) (2016-06-10)
 
