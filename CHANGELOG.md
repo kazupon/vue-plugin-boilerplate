@@ -1,3 +1,19 @@
+<a name="8.0.0"></a>
+# [8.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v7.0.0...v8.0.0) (2016-06-12)
+
+
+### :star: New Features
+
+* coveralls setup ([a7cfca0](https://github.com/kazupon/vue-plugin-boilerplate/commit/a7cfca0))
+
+
+### :zap: Improvements
+
+* **e2e:** update test:e2e task ([7170397](https://github.com/kazupon/vue-plugin-boilerplate/commit/7170397))
+* **flow:** udpae flow config ([63c0dd6](https://github.com/kazupon/vue-plugin-boilerplate/commit/63c0dd6))
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v6.0.0...v7.0.0) (2016-06-12)
 
