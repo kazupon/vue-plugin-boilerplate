@@ -1,9 +1,9 @@
 [ignore]
 .*/node_modules/.*
-.*/docs/.*
+{{#gitbook}}.*/docs/.*{{/gitbook}}
 .*/test/.*
 .*/config/.*
-.*/examples/.*
+{{#e2e}}.*/examples/.*{{/e2e}}
 
 [include]
 
