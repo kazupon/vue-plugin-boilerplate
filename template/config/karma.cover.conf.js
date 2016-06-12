@@ -15,9 +15,9 @@ module.exports = config => {
   })
 
   // add babel-plugin-coverage for code intrumentation
-  options.webpack.module.loaders[0].query.plugins.push([
-    'coverage', { ignore: ['test/'] }
-  ])
+  options.webpack.babel = {
+    plugins: [['coverage', { ignore: ['test/'] }]]
+  }
 
   config.set(options)
 }

@@ -26,7 +26,7 @@ writeFile('src/index.js', main)
 rollup.rollup({
   entry: 'src/index.js',
   plugins: [
-    babel({ presets: ['es2015-rollup'] })
+    babel()
   ]
 }).then(bundle => {
   return write(
@@ -38,7 +38,7 @@ rollup.rollup({
     entry: 'src/index.js',
     plugins: [
       replace({ 'process.env.NODE_ENV': "'development'" }),
-      babel({ presets: ['es2015-rollup'] })
+      babel()
     ]
   }).then(bundle => {
     return write(
@@ -53,7 +53,7 @@ rollup.rollup({
     entry: 'src/index.js',
     plugins: [
       replace({ 'process.env.NODE_ENV': "'production'" }),
-      babel({ presets: ['es2015-rollup'] })
+      babel()
     ]
   }).then(bundle => {
     const code = bundle.generate({

@@ -1,5 +1,6 @@
-function plugin (Vue, options = {}) {
-  Vue.prototype.$add = (a, b) => {
+{{#flow}}/* @flow */{{/flow}}
+function plugin (Vue, options{{#flow}}: Object {{/flow}} = {}){{#flow}}: number{{/flow}} {
+  Vue.prototype.$add = (a{{#flow}}: number{{/flow}}, b{{#flow}}: number{{/flow}}) => {
     return a + b
   }
 }

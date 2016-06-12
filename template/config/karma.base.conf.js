@@ -2,21 +2,10 @@ const webpack = require('webpack')
 
 const webpackConfig = {
   module: {
-    preLoaders: [{
-      test: /\.js$/,
-      exclude: /node_modules|vue\/dist/,
-      loader: 'babel!eslint'
-    }],
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules|vue\/dist/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015'],
-        plugins: [
-          ['babel-plugin-espower']
-        ]
-      }
+      loader: 'babel!eslint'
     }],
     postLoaders: [{
       test: /\.json$/,

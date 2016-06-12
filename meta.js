@@ -27,6 +27,10 @@ module.exports = {
       message: 'GitHub Account',
       default: ''
     },
+    flow: {
+      type: 'confirm',
+      message: 'Setup flow?'
+    },
     e2e: {
       type: 'confirm',
       message: 'Setup e2e tests?'
@@ -70,6 +74,9 @@ module.exports = {
   },
   filters: {
     "examples/**/*": 'e2e',
+    "test/e2e/**/*": 'e2e',
+    ".flowconfig": 'flow',
+    "decls/*": 'flow',
     "test/e2e/**/*": 'e2e',
     "docs/**/**": 'gitbook',
     "issue_template.md": 'issue'
