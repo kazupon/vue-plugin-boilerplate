@@ -12,6 +12,8 @@ It’s up to you !!
 ## Using tools
 - Transpiler
     - babel
+- Type Checker
+    - flowtype
 - Linter
     - eslint
 - Bundler
