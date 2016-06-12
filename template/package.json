@@ -42,6 +42,9 @@
     "karma": "^0.13.9",
     "karma-chrome-launcher": "^1.0.1",
     "karma-coverage": "^1.0.0",
+    {{#coveralls}}
+    "karma-coveralls": "^1.1.2",
+    {{/coveralls}}
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0",
@@ -124,6 +127,9 @@
     {{/sauce}}
     "test": "npm run lint && {{#flow}}npm run flow && {{/flow}}npm run test:unit{{#e2e}} && npm run test:e2e{{/e2e}}",
     "test:cover": "NODE_ENV=development karma start config/karma.cover.conf.js",
+    {{#coveralls}}
+    "test:coveralls": "NODE_ENV=development karma start config/karma.coveralls.conf.js",
+    {{/coveralls}}
     {{#e2e}}
     "test:e2e": "npm run build && node test/e2e/runner.js",
     {{/e2e}}

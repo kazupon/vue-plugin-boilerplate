@@ -35,6 +35,10 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests?'
     },
+    coveralls: {
+      type: 'confirm',
+      message: 'Setup coveralls?'
+    },
     sauce: {
       type: 'confirm',
       message: 'Setup sauce tests?'
@@ -75,9 +79,10 @@ module.exports = {
   filters: {
     "examples/**/*": 'e2e',
     "test/e2e/**/*": 'e2e',
+    "test/e2e/**/*": 'e2e',
+    "config/karma.coveralls.conf.js": 'coveralls',
     ".flowconfig": 'flow',
     "decls/*": 'flow',
-    "test/e2e/**/*": 'e2e',
     "docs/**/**": 'gitbook',
     "issue_template.md": 'issue'
   },
