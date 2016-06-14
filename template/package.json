@@ -104,7 +104,7 @@
     "changelog": "conventional-changelog -i CHANGELOG.md -s {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     "release": "conventional-github-releaser {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     {{/conventional}}
-    "clean": "rm -rf coverage && rm -rf dist/*.js*",
+    "clean": "rm -rf coverage && rm -rf dist/*.js* && rm ./*.log",
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     {{#gitbook}}
     "docs": "cd docs && gitbook serve",
