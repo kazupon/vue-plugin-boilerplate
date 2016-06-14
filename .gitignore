@@ -1,6 +1,7 @@
 lib
 coverage
 node_modules
+test/e2e/report
 .DS_Store
 *.log
 *.swp
