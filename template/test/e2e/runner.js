@@ -9,7 +9,7 @@ server.listen(8080)
 const spawn = require('cross-spawn')
 const args = [
   '--config', 'config/nightwatch.conf.js',
-  '--env', 'chrome,firefox'
+  '--env', 'chrome,firefox,phantomjs'
 ]
 
 if (process.argv[2]) {
