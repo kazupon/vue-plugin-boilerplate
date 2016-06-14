@@ -1,3 +1,22 @@
+<a name="8.1.0"></a>
+# [8.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v8.0.0...v8.1.0) (2016-06-14)
+
+
+### :bug: Bug Fixes
+
+* **flow:** fix blank space eslint error ([c4fdc05](https://github.com/kazupon/vue-plugin-boilerplate/commit/c4fdc05))
+
+
+### :zap: Improvements
+
+* **cover:** update reporter for coverage ([b9bcd81](https://github.com/kazupon/vue-plugin-boilerplate/commit/b9bcd81))
+* **e2e:** update runnter ([4a406be](https://github.com/kazupon/vue-plugin-boilerplate/commit/4a406be))
+* **git:** add ignore file ([7da8673](https://github.com/kazupon/vue-plugin-boilerplate/commit/7da8673))
+* **sauce:** avoid spamming CI output ([e81478c](https://github.com/kazupon/vue-plugin-boilerplate/commit/e81478c))
+* **sauce:** enable microsoft edge ([133c0e6](https://github.com/kazupon/vue-plugin-boilerplate/commit/133c0e6))
+
+
+
 <a name="8.0.0"></a>
 # [8.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v7.0.0...v8.0.0) (2016-06-12)
 
