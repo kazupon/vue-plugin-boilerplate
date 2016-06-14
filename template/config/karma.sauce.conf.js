@@ -75,7 +75,6 @@ module.exports = config => {
     singleRun: true,
     browsers: Object.keys(batch),
     customLaunchers: batch,
-    reporters: ['progress', 'saucelabs'],
     reporters: process.env.CI
       ? ['dots', 'saucelabs'] // avoid spamming CI output
       : ['progress', 'saucelabs'],
