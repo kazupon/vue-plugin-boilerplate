@@ -1,3 +1,13 @@
+<a name="9.0.0"></a>
+# [9.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v8.1.0...v9.0.0) (2016-07-26)
+
+
+### :boom: Breaking changes
+
+* switch nightwatch helper to yyx990803/nightwatch-helpers ([347a848](https://github.com/kazupon/vue-plugin-boilerplate/commit/347a848))
+
+
+
 <a name="8.1.0"></a>
 # [8.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v8.0.0...v8.1.0) (2016-06-14)
 
