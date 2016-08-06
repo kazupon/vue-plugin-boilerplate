@@ -1,3 +1,13 @@
+<a name="10.0.0"></a>
+# [10.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v9.0.0...v10.0.0) (2016-08-06)
+
+
+### :star: New Features
+
+* **version:** add version setting ([19fbe3c](https://github.com/kazupon/vue-plugin-boilerplate/commit/19fbe3c))
+
+
+
 <a name="9.0.0"></a>
 # [9.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v8.1.0...v9.0.0) (2016-07-26)
 
