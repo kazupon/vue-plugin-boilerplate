@@ -29,7 +29,7 @@ module.exports = {
     },
     flow: {
       type: 'confirm',
-      message: 'Setup flow?'
+      message: 'Setup flowtype?'
     },
     e2e: {
       type: 'confirm',
