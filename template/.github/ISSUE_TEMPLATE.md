@@ -29,7 +29,7 @@ Remove the template from below and provide thoughtful commentary *and code sampl
 
 <!-- BUG REPORT TEMPLATE -->
 ### vue & {{ name }} version
-1.0.17, 2.0.0-beta.1
+2.0.x, x.y.z
 
 ### Reproduction Link
 <!-- A minimal JSBin, JSFiddle, Codepen, or a GitHub reprository that can reproduce the bug. -->
