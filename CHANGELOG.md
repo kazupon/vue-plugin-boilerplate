@@ -1,3 +1,19 @@
+<a name="10.1.0"></a>
+# [10.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.0.0...v10.1.0) (2016-08-20)
+
+
+### :star: New Features
+
+* **template:** add contributing template ([444f1d4](https://github.com/kazupon/vue-plugin-boilerplate/commit/444f1d4))
+* **template:** add pull request template ([d1c6ea9](https://github.com/kazupon/vue-plugin-boilerplate/commit/d1c6ea9))
+
+
+### :zap: Improvements
+
+* **issue:** move template hdden directory ([915b7c7](https://github.com/kazupon/vue-plugin-boilerplate/commit/915b7c7))
+
+
+
 <a name="10.0.0"></a>
 # [10.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v9.0.0...v10.0.0) (2016-08-06)
 
