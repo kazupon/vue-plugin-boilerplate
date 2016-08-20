@@ -90,7 +90,8 @@ module.exports = {
     ".flowconfig": 'flow',
     "decls/*": 'flow',
     "docs/**/**": 'gitbook',
-    ".github/ISSUE_TEMPLATE.md": 'issue'
+    ".github/ISSUE_TEMPLATE.md": 'issue',
+    "CONTRIBUTING.md": "contribution"
   },
   helpers: {
     nowYear: function () {
