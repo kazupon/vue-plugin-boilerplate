@@ -1,10 +1,11 @@
 {
-  "gitbook": "2.x.x",
-  "plugins": ["edit-link", "github", "advanced-emoji"],
+  "gitbook": "3.x.x",
+  "root": "./",
+  "plugins": ["edit-link", "github", "advanced-emoji@0.2.1"],
   "pluginsConfig": {
     {{#unless_eq githubAccount ""}}
     "edit-link": {
-      "base": "https://github.com/{{ githubAccount }}/{{ name }}/tree/{{ branch }}/docs",
+      "base": "https://github.com/{{ githubAccount }}/{{ name }}/tree/{{ branch }}/gitbook",
       "label": "Edit This Page"
     },
     "github": {

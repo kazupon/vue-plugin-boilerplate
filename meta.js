@@ -89,6 +89,7 @@ module.exports = {
     "config/karma.coveralls.conf.js": 'coveralls',
     ".flowconfig": 'flow',
     "decls/*": 'flow',
+    "gitbook/**/**": 'gitbook',
     "docs/**/**": 'gitbook',
     ".github/ISSUE_TEMPLATE.md": 'issue',
     "CONTRIBUTING.md": "contribution"
