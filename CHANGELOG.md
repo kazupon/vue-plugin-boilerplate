@@ -1,3 +1,13 @@
+<a name="10.2.0"></a>
+# [10.2.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.1.0...v10.2.0) (2016-08-26)
+
+
+### :zap: Improvements
+
+* **gitbook:** update gitbook templating for github pages ([2c5195c](https://github.com/kazupon/vue-plugin-boilerplate/commit/2c5195c))
+
+
+
 <a name="10.1.0"></a>
 # [10.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.0.0...v10.1.0) (2016-08-20)
 
