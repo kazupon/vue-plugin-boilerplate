@@ -22,8 +22,8 @@
     "babel-preset-es2015-rollup-vue": "^1.1.0",
     {{#flow}}
     "babel-preset-flow-vue": "^1.0.0",
-    "eslint-plugin-flow-vars": "^0.4.0",
-    "flow-bin": "^0.26.0",
+    "eslint-plugin-flowtype": "^2.16.0",
+    "flow-bin": "^0.32.0",
     {{/flow}}
     {{#conventional}}
     "conventional-changelog-cli": "^1.1.1",
