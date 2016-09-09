@@ -29,8 +29,9 @@
     "conventional-changelog-cli": "^1.1.1",
     "conventional-github-releaser": "^1.1.2",
     {{/conventional}}
-    "eslint": "^2.8.0",
-    "eslint-config-vue": "^1.0.0",
+    "eslint": "^3.4.0",
+    "eslint-config-vue": "^1.1.0",
+    "eslint-plugin-html": "^1.5.2",
     "eslint-loader": "^1.3.0",
     {{#gitbook}}
     "gitbook-cli": "^2.3.0",
