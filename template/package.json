@@ -119,18 +119,18 @@
     "lint": "eslint src test config",
     {{#sauce}}
     "sauce": "npm run sauce:coolkids && npm run sauce:ie && npm run sauce:mobile",
-    "sauce:coolkids": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 0",
-    "sauce:ie": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 1",
-    "sauce:mobile": "NODE_ENV=development karma start config/karma.sauce.conf.js -- 2",
+    "sauce:coolkids": "karma start config/karma.sauce.conf.js -- 0",
+    "sauce:ie": "karma start config/karma.sauce.conf.js -- 1",
+    "sauce:mobile": "karma start config/karma.sauce.conf.js -- 2",
     {{/sauce}}
     "test": "npm run lint && {{#flow}}npm run flow && {{/flow}}npm run test:cover{{#e2e}} && npm run test:e2e -- --env phantomjs{{/e2e}}",
-    "test:cover": "NODE_ENV=development karma start config/karma.cover.conf.js",
+    "test:cover": "karma start config/karma.cover.conf.js",
     {{#coveralls}}
-    "test:coveralls": "NODE_ENV=development karma start config/karma.coveralls.conf.js",
+    "test:coveralls": "karma start config/karma.coveralls.conf.js",
     {{/coveralls}}
     {{#e2e}}
     "test:e2e": "npm run build && node test/e2e/runner.js",
     {{/e2e}}
-    "test:unit": "NODE_ENV=development karma start config/karma.unit.conf.js"
+    "test:unit": "karma start config/karma.unit.conf.js"
   }
 }
