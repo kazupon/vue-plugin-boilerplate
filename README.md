@@ -10,14 +10,16 @@ Boilerplate for Vue.js plugin
 It’s up to you !!
 
 ## Using tools
-- Transpiler
-    - babel
+- Transpiler / Compiler
+    - babel (for development)
+    - buble (for distribution)
 - Type Checker
     - flowtype
 - Linter
     - eslint
 - Bundler
-    - webpack, rollup
+    - webpack (for development)
+    - rollup (for distribution)
 - Test Assertion
     - power-assert
 - Test Fremework
