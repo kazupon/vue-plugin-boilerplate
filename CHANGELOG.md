@@ -1,3 +1,18 @@
+<a name="11.0.0"></a>
+# [11.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.2.0...v11.0.0) (2016-09-12)
+
+
+### :boom: Breaking changes
+
+* **build:** change dist files bulding ([397d93a](https://github.com/kazupon/vue-plugin-boilerplate/commit/397d93a))
+
+
+### NOTE
+
+* build:   using rollup plugin: babel -> buble
+
+
+
 <a name="10.2.0"></a>
 # [10.2.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.1.0...v10.2.0) (2016-08-26)
 
