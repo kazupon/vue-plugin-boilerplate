@@ -22,7 +22,7 @@ It’s up to you !!
     - rollup (for distribution)
 - Test Assertion
     - power-assert
-- Test Fremework
+- Test Framework
     - jasmine
 - Test Runner
     - karma
