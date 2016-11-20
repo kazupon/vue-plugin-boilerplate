@@ -1,3 +1,13 @@
+<a name="11.1.0"></a>
+# [11.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.0.0...v11.1.0) (2016-11-20)
+
+
+### :zap: Improvements
+
+* **rollup:** replace flow plugin ([c5d7d9e](https://github.com/kazupon/vue-plugin-boilerplate/commit/c5d7d9e))
+
+
+
 <a name="11.0.0"></a>
 # [11.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v10.2.0...v11.0.0) (2016-09-12)
 
