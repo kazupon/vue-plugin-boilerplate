@@ -23,7 +23,6 @@
     "babel-preset-flow-vue": "^1.0.0",
     "eslint-plugin-flowtype": "^2.16.0",
     "flow-bin": "^0.32.0",
-    "flow-remove-types": "github:yyx990803/flow-remove-types",
     {{/flow}}
     {{#conventional}}
     "conventional-changelog-cli": "^1.1.1",
@@ -61,6 +60,9 @@
     "rollup": "^0.34.10",
     "rollup-plugin-buble": "^0.13.0",
     "rollup-plugin-replace": "^1.1.0",
+    {{#flow}}
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    {{/flow}}
     "uglify-js": "^2.6.1",
     {{#e2e}}
     "chromedriver": "^2.21.2",

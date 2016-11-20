@@ -1,5 +1,5 @@
 const replace = require('rollup-plugin-replace'){{#flow}}
-const flow = require('./rollup-plugin-flow'){{/flow}}
+const flow = require('rollup-plugin-flow-no-whitespace'){{/flow}}
 const buble = require('rollup-plugin-buble')
 const banner = require('./banner')
 const pack = require('../package.json')
