@@ -1,3 +1,14 @@
+<a name="11.2.0"></a>
+# [11.2.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.1.0...v11.2.0) (2016-11-29)
+
+
+### :zap: Improvements
+
+* **examples:** update example for vue 2.0 later ([ef60e4f](https://github.com/kazupon/vue-plugin-boilerplate/commit/ef60e4f))
+* **gitbook:** add vuejs style theme plugin ([ce6d453](https://github.com/kazupon/vue-plugin-boilerplate/commit/ce6d453))
+
+
+
 <a name="11.1.0"></a>
 # [11.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.0.0...v11.1.0) (2016-11-20)
 
