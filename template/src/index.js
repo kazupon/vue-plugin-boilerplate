@@ -5,7 +5,7 @@ function plugin (Vue{{#flow}}: any{{/flow}}, options{{#flow}}: Object{{/flow}} =
   }
 }
 
-plugin.version = '{{ version }}'
+plugin.version = '__VERSION__'
 
 export default plugin
 
