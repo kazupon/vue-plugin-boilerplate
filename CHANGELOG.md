@@ -1,3 +1,13 @@
+<a name="11.2.2"></a>
+## [11.2.2](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.2.1...v11.2.2) (2016-12-23)
+
+
+### :zap: Improvements
+
+* **README:** add emoji ([d8a4cce](https://github.com/kazupon/vue-plugin-boilerplate/commit/d8a4cce))
+
+
+
 <a name="11.2.1"></a>
 ## [11.2.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.2.0...v11.2.1) (2016-12-05)
 
