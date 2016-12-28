@@ -1,3 +1,22 @@
+<a name="12.0.0"></a>
+# [12.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.2.2...v12.0.0) (2016-12-28)
+
+
+### :star: New Features
+
+* add badges ([fe8b4d1](https://github.com/kazupon/vue-plugin-boilerplate/commit/fe8b4d1))
+* add ci service setup ([f692bd3](https://github.com/kazupon/vue-plugin-boilerplate/commit/f692bd3))
+* add editor config ([2273cd9](https://github.com/kazupon/vue-plugin-boilerplate/commit/2273cd9))
+* support covrage service selecting ([c52059d](https://github.com/kazupon/vue-plugin-boilerplate/commit/c52059d))
+
+
+### :zap: Improvements
+
+* **coverage:** change to istanbul from coverage for babel plugin ([f7e4cf9](https://github.com/kazupon/vue-plugin-boilerplate/commit/f7e4cf9))
+* **saucelabs:** update mobile envs ([8d3f882](https://github.com/kazupon/vue-plugin-boilerplate/commit/8d3f882))
+
+
+
 <a name="11.2.2"></a>
 ## [11.2.2](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.2.1...v11.2.2) (2016-12-23)
 
