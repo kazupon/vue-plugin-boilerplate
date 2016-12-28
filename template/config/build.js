@@ -1,7 +1,6 @@
 const fs = require('fs')
 const exist = fs.existsSync
 const mkdir = fs.mkdirSync
-const pack = require('../package.json')
 const getAllEntries = require('./entry').getAllEntries
 const build = require('./bundle')
 

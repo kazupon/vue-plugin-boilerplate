@@ -6,15 +6,15 @@ module.exports = config => {
     reporters: ['coverage', 'coveralls'],
     coverageReporter: {
       reporters: [{
-        type: 'lcov', dir: '../coverage'
+        type: 'lcov', dir: '../coverage', subdir: '.'
       }]
     },
     singleRun: true
   })
 
-  // add babel-plugin-coverage for code intrumentation
+  // add babel-plugin-istanbul for code intrumentation
   options.webpack.babel = {
-    plugins: [['coverage', { ignore: ['test/'] }]]
+    plugins: [['istanbul', { exclude: ['test/'] }]]
   }
 
   config.set(options)

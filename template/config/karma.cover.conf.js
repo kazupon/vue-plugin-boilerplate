@@ -8,7 +8,7 @@ module.exports = config => {
       reporters: [
         { type: 'lcov', dir: '../coverage', subdir: '.' },
         { type: 'text-summary', dir: '../coverage', subdir: '.' }
-      }]
+      ]
     },
     singleRun: true
   })
