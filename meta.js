@@ -49,6 +49,20 @@ module.exports = {
       type: 'confirm',
       message: 'Setup sauce tests?'
     },
+    ci: {
+      type: 'confirm',
+      message: 'Setup CI services?'
+    },
+    ciConfig: {
+      when: 'ci',
+      type: 'list',
+      message: 'Choice a CI service',
+      choices: [
+        'travis',
+        'circlci'
+      ],
+      default: ['circlci']
+    },
     conventional: {
       type: 'confirm',
       message: 'Setup conventional-changelog tasks?'
@@ -86,6 +100,8 @@ module.exports = {
     "examples/**/*": 'e2e',
     "test/e2e/**/*": 'e2e',
     "test/e2e/**/*": 'e2e',
+    ".travis.yml": "ciConfig === 'travis'",
+    "circl.yml": "ciConfig === 'circlci'",
     "config/karma.coveralls.conf.js": 'coveralls',
     ".flowconfig": 'flow',
     "decls/*": 'flow',
