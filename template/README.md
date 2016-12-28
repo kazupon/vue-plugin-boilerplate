@@ -1,5 +1,8 @@
 # {{ name }}
 
+[![npm](https://img.shields.io/npm/v/{{ name }}.svg)](https://www.npmjs.com/package/{{ name }})
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+
 {{ description }}
 
 {{#gitbook}}{{#unless_eq githubAccount ""}}
