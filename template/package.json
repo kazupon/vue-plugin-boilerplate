@@ -42,9 +42,9 @@
     "karma": "^1.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.0.0",
-    {{#coveralls}}
+    {{#if_eq coverageConfig "coveralls"}}
     "karma-coveralls": "^1.1.2",
-    {{/coveralls}}
+    {{/if_eq}}
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-mocha-reporter": "^2.0.4",
@@ -109,6 +109,9 @@
     "release": "conventional-github-releaser {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     {{/conventional}}
     "clean": "rm -rf coverage && rm -rf dist/*.js* && rm ./*.log",
+    {{#if_eq coverageConfig "codecov"}}
+    "coverage": "cat ./coverage/lcov.info",
+    {{/if_eq}}
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
     {{#gitbook}}
     "docs": "gitbook serve ./gitbook ./docs",
@@ -127,9 +130,9 @@
     {{/sauce}}
     "test": "npm run lint && {{#flow}}npm run flow && {{/flow}}npm run test:cover{{#e2e}} && npm run test:e2e -- --env phantomjs{{/e2e}}",
     "test:cover": "karma start config/karma.cover.conf.js",
-    {{#coveralls}}
+    {{#if_eq coverageConfig "coveralls"}}
     "test:coveralls": "karma start config/karma.coveralls.conf.js",
-    {{/coveralls}}
+    {{/if_eq}}
     {{#e2e}}
     "test:e2e": "npm run build && node test/e2e/runner.js",
     {{/e2e}}

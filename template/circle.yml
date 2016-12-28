@@ -1,3 +1,8 @@
 machine:
   node:
     version: 6
+{{#if_eq coverageConfig "codecov"}}
+test:
+  post:
+    - npm run coverage && bash <(curl -s https://codecov.io/bash)
+{{/if_eq}}

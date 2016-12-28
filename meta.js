@@ -41,9 +41,19 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests?'
     },
-    coveralls: {
+    coverage: {
       type: 'confirm',
-      message: 'Setup coveralls?'
+      message: 'Setup coverage services?'
+    },
+    coverageConfig: {
+      when: 'coverage',
+      type: 'list',
+      message: 'Choice a coverage service',
+      choices: [
+        'coveralls',
+        'codecov'
+      ],
+      default: ['codecov']
     },
     sauce: {
       type: 'confirm',
@@ -102,7 +112,7 @@ module.exports = {
     "test/e2e/**/*": 'e2e',
     ".travis.yml": "ciConfig === 'travis'",
     "circl.yml": "ciConfig === 'circlci'",
-    "config/karma.coveralls.conf.js": 'coveralls',
+    "config/karma.coveralls.conf.js": "coverageConfig === 'coveralls'",
     ".flowconfig": 'flow',
     "decls/*": 'flow',
     "gitbook/**/**": 'gitbook',
