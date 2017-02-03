@@ -3,7 +3,8 @@
   "plugins": ["babel-plugin-espower"],
   "env": {
     "test": {
-      "plugins": ["istanbul"]
+      "plugins": ["istanbul"],
+      "presets": ["power-assert"]
     }
   }
 }

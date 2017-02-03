@@ -16,8 +16,8 @@
     "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-istanbul": "^3.1.2",
-    "babel-plugin-espower": "^2.3.2",
     "babel-preset-es2015": "^6.22.0",
+    "babel-preset-power-assert": "^1.0.0",
     "buble": "^0.14.0",
     {{#flow}}
     "babel-preset-flow-vue": "^1.0.0",
@@ -111,7 +111,7 @@
     {{#if_eq coverageConfig "codecov"}}
     "coverage": "cat ./coverage/lcov.info",
     {{/if_eq}}
-    "dev": "webpack-dev-server --inline --hot --open --config config/webpack.dev.conf.js",
+    "dev": "BABEL_ENV=test webpack-dev-server --inline --hot --open --config config/webpack.dev.conf.js",
     {{#gitbook}}
     "docs": "gitbook serve ./gitbook ./docs",
     "docs:build": "gitbook build ./gitbook ./docs",
@@ -135,6 +135,6 @@
     {{#e2e}}
     "test:e2e": "npm run build && node test/e2e/runner.js",
     {{/e2e}}
-    "test:unit": "karma start config/karma.unit.conf.js"
+    "test:unit": "BABEL_ENV=test karma start config/karma.unit.conf.js"
   }
 }
