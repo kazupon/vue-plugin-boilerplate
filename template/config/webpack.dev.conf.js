@@ -1,29 +1,20 @@
+const path = require('path')
 const webpack = require('webpack')
 const JasmineWebpackPlugin = require('./webpack.dev.plugin')
 
 module.exports = {
   entry: './test/unit/index.js',
   output: {
-    path: './test/unit',
+    path: path.resolve(__dirname, '/test/unit'),
     filename: 'tests.js',
     publicPath: '/'
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       exclude: /node_modules|vue\/dist/,
-      loader: 'babel'
-    }],
-    postLoaders: [{
-      test: /\.json$/,
-      loader: 'json'
+      loader: 'babel-loader'
     }]
-  },
-  devServer: {
-    contentBase: './',
-    port: 8080,
-    hot: true,
-    inline: true
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -31,8 +22,7 @@ module.exports = {
         NODE_ENV: '"development"'
       }
     }),
-    new JasmineWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new JasmineWebpackPlugin()
   ],
-  devtool: 'source-map'
+  devtool: '#eval-source-map'
 }

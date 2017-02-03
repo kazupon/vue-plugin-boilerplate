@@ -1,4 +1,9 @@
 {
   "presets": ["es2015"{{#flow}}, "flow-vue"{{/flow}}],
-  "plugins": ["babel-plugin-espower"]
+  "plugins": ["babel-plugin-espower"],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
 }

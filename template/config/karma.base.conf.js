@@ -5,11 +5,7 @@ const webpackConfig = {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules|vue\/dist/,
-      loader: 'babel'
-    }],
-    postLoaders: [{
-      test: /\.json$/,
-      loader: 'json'
+      loader: 'babel-loader'
     }]
   },
   plugins: [
