@@ -1,3 +1,13 @@
+<a name="13.0.0"></a>
+# [13.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v12.0.0...v13.0.0) (2017-02-03)
+
+
+### :zap: Improvements
+
+* **power-assert:** change babel-preset-power-assert ([d8e5f9c](https://github.com/kazupon/vue-plugin-boilerplate/commit/d8e5f9c))
+* **webpack:** upgrade webpack 2.2 ([f1dcdb8](https://github.com/kazupon/vue-plugin-boilerplate/commit/f1dcdb8))
+
+
 <a name="12.0.0"></a>
 # [12.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v11.2.2...v12.0.0) (2016-12-28)
 
