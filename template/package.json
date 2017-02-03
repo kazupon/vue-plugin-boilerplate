@@ -38,21 +38,21 @@
     "html-webpack-plugin": "^2.19.0",
     "jasmine": "^2.5.2",
     "jasmine-core": "^2.5.2",
-    "karma": "^1.1.0",
+    "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
-    "karma-coverage": "^1.0.0",
+    "karma-coverage": "^1.1.1",
     {{#if_eq coverageConfig "coveralls"}}
     "karma-coveralls": "^1.1.2",
     {{/if_eq}}
     "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-mocha-reporter": "^2.0.4",
-    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-safari-launcher": "^1.0.0",
     {{#sauce}}
-    "karma-sauce-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^1.1.0",
     {{/sauce}}
-    "karma-sourcemap-loader": "^0.3.5",
+    "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.2",
     "phantomjs-prebuilt": "^2.1.1",
     "power-assert": "^1.2.0",
