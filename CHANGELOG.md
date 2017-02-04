@@ -1,3 +1,13 @@
+<a name="13.0.1"></a>
+## [13.0.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.0.0...v13.0.1) (2017-02-04)
+
+
+### :zap: Improvements
+
+* **meta:** github account default username ([da4886d](https://github.com/kazupon/vue-plugin-boilerplate/commit/da4886d))
+
+
+
 <a name="13.0.0"></a>
 # [13.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v12.0.0...v13.0.0) (2017-02-03)
 
