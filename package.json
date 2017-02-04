@@ -12,7 +12,8 @@
   "devDependencies": {
     "conventional-changelog-cli": "^1.1.1",
     "conventional-github-releaser": "^1.1.3",
-    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git"
+    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git",
+    "vue-cli": "^2.8.1"
   },
   "files": [
     "template"
