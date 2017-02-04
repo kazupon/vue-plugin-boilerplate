@@ -1,3 +1,6 @@
+const os = require('os')
+const githubAccountDefault = os.userInfo().username
+
 module.exports = {
   prompts: {
     name: {
@@ -31,7 +34,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'GitHub Account',
-      default: ''
+      default: githubAccountDefault
     },
     flow: {
       type: 'confirm',
