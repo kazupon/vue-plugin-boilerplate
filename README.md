@@ -1,6 +1,9 @@
 # vue-plugin-boilerplate
 
+[![CircleCI](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master)
+
 Boilerplate for Vue.js plugin
+
 
 ## Usage
 
