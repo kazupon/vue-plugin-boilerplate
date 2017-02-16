@@ -1,3 +1,21 @@
+<a name="13.1.0"></a>
+# [13.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.0.1...v13.1.0) (2017-02-16)
+
+
+### :star: New Features
+
+* add babel-polyfill ([a56db01](https://github.com/kazupon/vue-plugin-boilerplate/commit/a56db01))
+* doc module versioning ([bbcb6bc](https://github.com/kazupon/vue-plugin-boilerplate/commit/bbcb6bc))
+
+
+### :zap: Improvements
+
+* **eslint:** update eslint ([a6230e9](https://github.com/kazupon/vue-plugin-boilerplate/commit/a6230e9))
+* **npm:** update tasks ([c0fac2d](https://github.com/kazupon/vue-plugin-boilerplate/commit/c0fac2d))
+* **test:** more easy unit testing ([d29e70c](https://github.com/kazupon/vue-plugin-boilerplate/commit/d29e70c))
+
+
+
 <a name="13.0.1"></a>
 ## [13.0.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.0.0...v13.0.1) (2017-02-04)
 
