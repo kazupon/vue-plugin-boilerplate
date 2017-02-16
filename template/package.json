@@ -103,7 +103,7 @@
   },
   {{/unless_eq}}
   "scripts": {
-    "build": "node config/build.js{{#gitbook}} && npm run docs:build{{/gitbook}}",
+    "build": "node config/build.js",
     {{#conventional}}
     "changelog": "conventional-changelog -i CHANGELOG.md -s {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     "release": "conventional-github-releaser {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
@@ -115,7 +115,7 @@
     "dev": "BABEL_ENV=test webpack-dev-server --inline --hot --open --config config/webpack.dev.conf.js",
     {{#gitbook}}
     "docs": "gitbook serve ./gitbook ./docs",
-    "docs:build": "gitbook build ./gitbook ./docs",
+    "docs:build": "node config/version.js && gitbook build ./gitbook ./docs",
     "docs:install": "gitbook install ./gitbook",
     {{/gitbook}}
     {{#flow}}
