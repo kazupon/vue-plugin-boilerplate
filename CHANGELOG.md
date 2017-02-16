@@ -1,3 +1,18 @@
+<a name="13.1.1"></a>
+## [13.1.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.1.0...v13.1.1) (2017-02-16)
+
+
+### :bug: Bug Fixes
+
+* **circleci:** fix typo ([8675a8d](https://github.com/kazupon/vue-plugin-boilerplate/commit/8675a8d))
+
+
+### :zap: Improvements
+
+* **gitbook:** ignore gitbook docs additional versioning ([5ac0d6d](https://github.com/kazupon/vue-plugin-boilerplate/commit/5ac0d6d))
+
+
+
 <a name="13.1.0"></a>
 # [13.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.0.1...v13.1.0) (2017-02-16)
 
