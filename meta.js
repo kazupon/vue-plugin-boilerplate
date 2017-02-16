@@ -72,9 +72,9 @@ module.exports = {
       message: 'Choice a CI service',
       choices: [
         'travis',
-        'circlci'
+        'circleci'
       ],
-      default: ['circlci']
+      default: ['circleci']
     },
     conventional: {
       type: 'confirm',
@@ -114,7 +114,7 @@ module.exports = {
     "test/e2e/**/*": 'e2e',
     "test/e2e/**/*": 'e2e',
     ".travis.yml": "ciConfig === 'travis'",
-    "circl.yml": "ciConfig === 'circlci'",
+    "circle.yml": "ciConfig === 'circleci'",
     "config/karma.coveralls.conf.js": "coverageConfig === 'coveralls'",
     ".flowconfig": 'flow',
     "decls/*": 'flow',
