@@ -1,5 +1,11 @@
 # Installation
 
+### CDN
+unpkg
+```html
+<script src="https://unpkg.com/{{ name }}@{{ version }}/dist/{{ name }}.min.js"></script>
+```
+
 {{#unless_eq githubAccount ""}}
 ## Direct Download
 
