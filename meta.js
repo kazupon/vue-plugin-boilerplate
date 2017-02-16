@@ -120,6 +120,7 @@ module.exports = {
     "decls/*": 'flow',
     "gitbook/**/**": 'gitbook',
     "docs/**/**": 'gitbook',
+    "config/version.js": 'gitbook',
     ".github/ISSUE_TEMPLATE.md": 'issue',
     "CONTRIBUTING.md": "contribution"
   },
