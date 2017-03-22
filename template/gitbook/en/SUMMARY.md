@@ -7,3 +7,4 @@
 {{/unless_eq}}
 
 - [Installation](installation.md)
+- [Getting Started](started.md)
