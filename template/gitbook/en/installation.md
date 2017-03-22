@@ -1,40 +1,45 @@
 # Installation
 
-### CDN
-unpkg
+### Direct Download / CDN
+
+https://unpkg.com/{{ name }}/dist/{{ name }}
+
+[unpkg.com](https://unpkg.com) provides NPM-based CDN links. The above link will always point to the latest release on NPM. You can also use a specific version/tag via URLs like https://unpkg.com/{{ name }}@{{ version }}/dist/{{ name }}.js
+ 
+Include {{ name }} after Vue and it will install itself automatically:
+
 ```html
-<script src="https://unpkg.com/{{ name }}@{{ version }}/dist/{{ name }}.min.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/{{ name }}/dist/{{ name }}.js"></script>
 ```
 
-{{#unless_eq githubAccount ""}}
-## Direct Download
-
-See [dist folder](https://github.com/{{ githubAccount }}/{{ name }}/tree/{{ branch }}/dist). Note the dist files are always the latest stable - it's not update-to-date with the {{ branch }} branch source.
-{{/unless_eq}}
-
-## NPM
-
-### stable version
+### NPM
 
     $ npm install {{ name }}
 
+### Yarn
+
+    $ yarn add {{ name }}
+
+When used with a module system, you must explicitly install the `{{ name }}` via `Vue.use()`:
+
+```javascript
+import Vue from 'vue'
+import {{ classify name }} from '{{ name }}'
+
+Vue.use({{ classify name }})
+```
+
+You don't need to do this when using global script tags.
+
 {{#unless_eq githubAccount ""}}
-### development version
+### Dev Build
+
+You will have to clone directly from GitHub and build `{{ name }}` yourself if
+you want to use the latest dev build.
 
     $ git clone https://github.com/{{ githubAccount }}/{{ name }}.git node_modules/{{ name }}
     $ cd node_modules/{{ name }}
     $ npm install
     $ npm run build
-
-When used in CommonJS, you must explicitly install the validator via `Vue.use()`:
 {{/unless_eq}}
-
-
-```javascript
-const Vue = require('vue')
-const {{ classify name }} = require('{{ name }}')
-
-Vue.use({{ classify name }})
-```
-
-You don't need to do this when using the standalone build, as it installs itself automatically.
