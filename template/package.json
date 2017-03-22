@@ -85,7 +85,7 @@
   {{#unless_eq githubAccount ""}}
   "homepage": "https://github.com/{{ githubAccount }}/{{ name }}#readme",
   {{/unless_eq}}
-  "jsnext:main": "src/index.js",
+  "unpkg": "dist/{{ name }}.js",
   "keywords": [
     "plugin",
     "vue",
