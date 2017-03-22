@@ -5,7 +5,7 @@ const pack = require('../package.json')
 const installation = fs
   .readFileSync('./gitbook/installation.md', 'utf-8')
   .replace(
-    /<script src="https:\/\/unpkg\.com\/{{ name }}@[\d.]+.[\d]+\/dist\/{{ name }}\.min\.js"><\/script>/,
-    '<script src="https://unpkg.com/{{ name }}@' + pack.version + '/dist/{{ name }}.min.js"></script>'
+    /https:\/\/unpkg\.com\/{{ name }}@[\d.]+.[\d]+\/dist\/{{ name }}\.js/,
+    'https://unpkg.com/{{ name }}@' + pack.version + '/dist/{{ name }}.js.'
   )
 fs.writeFileSync('./gitbook/installation.md', installation)
