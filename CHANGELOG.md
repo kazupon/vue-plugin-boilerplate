@@ -1,3 +1,15 @@
+<a name="14.0.0"></a>
+# [14.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.1.1...v14.0.0) (2017-03-23)
+
+
+### :star: New Features
+
+* **build:** support es module building ([577938d](https://github.com/kazupon/vue-plugin-boilerplate/commit/577938d)), closes [#10](https://github.com/kazupon/vue-plugin-boilerplate/issues/10)
+* **config:** add unpkg hint ([0593890](https://github.com/kazupon/vue-plugin-boilerplate/commit/0593890)), closes [#11](https://github.com/kazupon/vue-plugin-boilerplate/issues/11)
+* **gitbook:** add getting started template ([2d14c84](https://github.com/kazupon/vue-plugin-boilerplate/commit/2d14c84))
+
+
+
 <a name="13.1.1"></a>
 ## [13.1.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.1.0...v13.1.1) (2017-02-16)
 
