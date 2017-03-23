@@ -85,6 +85,8 @@
   {{#unless_eq githubAccount ""}}
   "homepage": "https://github.com/{{ githubAccount }}/{{ name }}#readme",
   {{/unless_eq}}
+  "main": "dist/{{ name }}.common.js",
+  "module": "dist/{{ name }}.esm.js",
   "unpkg": "dist/{{ name }}.js",
   "keywords": [
     "plugin",
@@ -92,7 +94,6 @@
     "vuejs"
   ],
   "license": "MIT",
-  "main": "dist/{{ name }}.common.js",
   "engines": {
     "node": ">= 6.0"
   },
