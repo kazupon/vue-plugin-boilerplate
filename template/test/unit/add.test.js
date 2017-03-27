@@ -9,7 +9,7 @@ describe('$add', () => {
 
   describe('1 + 1', () => {
     it('should be 2', done => {
-      waitForUpdate(() => {
+      nextTick(() => {
         assert(vm.$add(1, 1) === 2, 'You should be implemented!!')
       }).then(done)
     })

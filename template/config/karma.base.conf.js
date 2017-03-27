@@ -25,7 +25,7 @@ module.exports = {
   ],
   exclude: [
   ],
-  frameworks: ['jasmine'],
+  frameworks: ['mocha', 'phantomjs-shim'],
   preprocessors: {
     '../test/unit/index.js': ['webpack', 'sourcemap']
   },
