@@ -1,3 +1,18 @@
+<a name="15.0.0"></a>
+# [15.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v14.0.0...v15.0.0) (2017-03-27)
+
+
+### :boom: Breaking changes
+
+* **test:** switch jasmine to mocha ([f2f7539](https://github.com/kazupon/vue-plugin-boilerplate/commit/f2f7539))
+
+
+### :zap: Improvements
+
+* **test:** ignore vue performance info ([6d94f34](https://github.com/kazupon/vue-plugin-boilerplate/commit/6d94f34))
+
+
+
 <a name="14.0.0"></a>
 # [14.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v13.1.1...v14.0.0) (2017-03-23)
 
