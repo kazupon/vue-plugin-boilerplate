@@ -26,7 +26,7 @@ It’s up to you !!
 - Test Assertion
     - power-assert
 - Test Framework
-    - jasmine
+    - mocha
 - Test Runner
     - karma
 - Test Coverage
