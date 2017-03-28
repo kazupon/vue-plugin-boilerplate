@@ -1,18 +1,18 @@
-# vue-plugin-boilerplate
+# :nut_and_bolt: vue-plugin-boilerplate
 
 [![CircleCI](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master)
 
 Boilerplate for Vue.js plugin
 
 
-## Usage
+## :rocket: Usage
 
     $ npm i -g vue-cli
     $ vue init kazupon/vue-plugin-boilerplate vue-hello-plugin
 
 It’s up to you !!
 
-## Using tools
+## :hammer: Using tools
 - Transpiler / Compiler
     - babel (for development)
     - buble (for distribution)
@@ -36,7 +36,7 @@ It’s up to you !!
 - End-to-End Test Fremework
     - nightwatch.js
 
-## Bunlded ModuleName
+## :package: Bunlded ModuleName
 Defined the came-case into global.
 
 ex:
@@ -51,6 +51,6 @@ VuePluginBoilerplate
 Vue.use(VuePluginBoilerplate)
 ```
 
-# License
+# :copyright: License
 
 [MIT](http://opensource.org/licenses/MIT)
