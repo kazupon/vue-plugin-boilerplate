@@ -1,3 +1,13 @@
+<a name="15.0.1"></a>
+## [15.0.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v15.0.0...v15.0.1) (2017-04-01)
+
+
+### :zap: Improvements
+
+* **test:** add initial cb ([82e738c](https://github.com/kazupon/vue-plugin-boilerplate/commit/82e738c))
+
+
+
 <a name="15.0.0"></a>
 # [15.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v14.0.0...v15.0.0) (2017-03-27)
 
