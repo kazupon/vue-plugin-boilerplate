@@ -69,14 +69,14 @@ function timeout (n) {
 }
 
 // helper for mocha async assertions.
-// nextTick().then(() => {
+// nextTick(() => {
 //
 // Automatically waits for nextTick
 // }).then(() => {
 // return a promise or value to skip the wait
 // })
-function nextTick () {
-  const jobs = []
+function nextTick (initialCb) {
+  const jobs = initialCb ? [initialCb] : []
   let done
 
   const chainer = {
