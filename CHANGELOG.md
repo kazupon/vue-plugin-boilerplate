@@ -1,3 +1,13 @@
+<a name="16.0.0"></a>
+# [16.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v15.0.1...v16.0.0) (2017-06-07)
+
+
+### :boom: Breaking changes
+
+* **lint:** switch eslint-config-vue to eslint-coneslint-plugin-vue-libs ([433ec30](https://github.com/kazupon/vue-plugin-boilerplate/commit/433ec30))
+
+
+
 <a name="15.0.1"></a>
 ## [15.0.1](https://github.com/kazupon/vue-plugin-boilerplate/compare/v15.0.0...v15.0.1) (2017-04-01)
 
