@@ -1,3 +1,13 @@
+<a name="17.0.0"></a>
+# [17.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v16.0.0...v17.0.0) (2017-07-01)
+
+
+### :boom: Breaking changes
+
+* swtich to chrome headless from phantomjs ([d2ef3ad](https://github.com/kazupon/vue-plugin-boilerplate/commit/d2ef3ad))
+
+
+
 <a name="16.0.0"></a>
 # [16.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v15.0.1...v16.0.0) (2017-06-07)
 
