@@ -1,3 +1,13 @@
+<a name="17.1.0"></a>
+# [17.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v17.0.0...v17.1.0) (2017-09-08)
+
+
+### :star: New Features
+
+* add cross-env ([5fb74fb](https://github.com/kazupon/vue-plugin-boilerplate/commit/5fb74fb))
+
+
+
 <a name="17.0.0"></a>
 # [17.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v16.0.0...v17.0.0) (2017-07-01)
 
