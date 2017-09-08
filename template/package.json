@@ -29,6 +29,7 @@
     "conventional-changelog-cli": "^1.2.0",
     "conventional-github-releaser": "^1.1.3",
     {{/conventional}}
+    "cross-env": "^5.0.5",
     "eslint": "^3.14.1",
     "eslint-plugin-vue-libs": "^1.2.0",
     "eslint-loader": "^1.6.1",
@@ -110,7 +111,7 @@
     {{#if_eq coverageConfig "codecov"}}
     "coverage": "cat ./coverage/lcov.info",
     {{/if_eq}}
-    "dev": "BABEL_ENV=test webpack-dev-server --inline --hot --open --content-base ./test/unit/ --config config/webpack.dev.conf.js",
+    "dev": "cross-env BABEL_ENV=test webpack-dev-server --inline --hot --open --content-base ./test/unit/ --config config/webpack.dev.conf.js",
     {{#gitbook}}
     "docs": "gitbook serve ./gitbook ./docs",
     "docs:build": "node config/version.js && gitbook build ./gitbook ./docs",
@@ -127,13 +128,13 @@
     "sauce:mobile": "karma start config/karma.sauce.conf.js -- 2",
     {{/sauce}}
     "test": "npm run lint && {{#flow}}npm run flow && {{/flow}}npm run test:cover{{#e2e}} && npm run test:e2e{{/e2e}}",
-    "test:cover": "BABEL_ENV=test karma start config/karma.cover.conf.js",
+    "test:cover": "cross-env BABEL_ENV=test karma start config/karma.cover.conf.js",
     {{#if_eq coverageConfig "coveralls"}}
-    "test:coveralls": "BABEL_ENV=test karma start config/karma.coveralls.conf.js",
+    "test:coveralls": "cross-env BABEL_ENV=test karma start config/karma.coveralls.conf.js",
     {{/if_eq}}
     {{#e2e}}
     "test:e2e": "npm run build && node test/e2e/runner.js",
     {{/e2e}}
-    "test:unit": "BABEL_ENV=test karma start config/karma.unit.conf.js"
+    "test:unit": "cross-env BABEL_ENV=test karma start config/karma.unit.conf.js"
   }
 }
