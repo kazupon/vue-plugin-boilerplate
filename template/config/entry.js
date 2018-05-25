@@ -1,5 +1,4 @@
-const replace = require('rollup-plugin-replace'){{#flow}}
-const flow = require('rollup-plugin-flow-no-whitespace'){{/flow}}
+const replace = require('rollup-plugin-replace')
 const buble = require('rollup-plugin-buble')
 const banner = require('./banner')
 const pack = require('../package.json')
@@ -54,8 +53,7 @@ function genConfig (opts) {
       format: opts.format,
       banner: opts.banner
     },
-    plugins: [{{#flow}}
-      flow(),{{/flow}}
+    plugins: [
       buble()
     ]
   }

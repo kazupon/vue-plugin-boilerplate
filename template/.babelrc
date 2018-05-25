@@ -1,5 +1,5 @@
 {
-  "presets": ["@vue/app"{{#flow}}, "flow-vue"{{/flow}}],
+  "presets": ["@vue/app"],
   "plugins": ["babel-plugin-espower"],
   "env": {
     "test": {

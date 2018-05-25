@@ -36,10 +36,6 @@ module.exports = {
       message: 'GitHub Account',
       default: githubAccountDefault
     },
-    flow: {
-      type: 'confirm',
-      message: 'Setup flowtype?'
-    },
     e2e: {
       type: 'confirm',
       message: 'Setup e2e tests?'
@@ -116,8 +112,6 @@ module.exports = {
     ".travis.yml": "ciConfig === 'travis'",
     "circle.yml": "ciConfig === 'circleci'",
     "config/karma.coveralls.conf.js": "coverageConfig === 'coveralls'",
-    ".flowconfig": 'flow',
-    "decls/*": 'flow',
     "gitbook/**/**": 'gitbook',
     "docs/**/**": 'gitbook',
     "config/version.js": 'gitbook',
