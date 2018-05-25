@@ -1,5 +1,5 @@
 {
-  "presets": ["es2015"{{#flow}}, "flow-vue"{{/flow}}],
+  "presets": ["@vue/app"{{#flow}}, "flow-vue"{{/flow}}],
   "plugins": ["babel-plugin-espower"],
   "env": {
     "test": {
