@@ -10,10 +10,11 @@
     "url": "https://github.com/kazupon/vue-plugin-boilerplate/issues"
   },
   "devDependencies": {
+    "@vue/cli": "^3.0.0-beta.11",
+    "@vue/cli-init": "^3.0.0-beta.11",
     "conventional-changelog-cli": "^1.1.1",
     "conventional-github-releaser": "^1.1.3",
-    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git",
-    "vue-cli": "^2.8.1"
+    "git-commit-message-convention": "git://github.com/kazupon/git-commit-message-convention.git"
   },
   "files": [
     "template"
