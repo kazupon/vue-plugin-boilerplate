@@ -36,7 +36,6 @@
     {{#gitbook}}
     "gitbook-cli": "^2.3.0",
     {{/gitbook}}
-    "html-webpack-plugin": "^2.19.0",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.1.1",
     "karma": "^1.4.1",
@@ -71,8 +70,8 @@
     "selenium-server": "2.53.1",
     {{/e2e}}
     "vue": "^2.1.10",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.1"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.1"
   },
   "files": [
     "dist/{{ name }}.js",
