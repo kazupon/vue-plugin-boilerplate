@@ -8,13 +8,6 @@ const webpackConfig = {
       loader: 'babel-loader'
     }]
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"development"'
-      }
-    })
-  ],
   devtool: '#inline-source-map'
 }
 
