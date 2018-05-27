@@ -61,8 +61,8 @@
     "selenium-server": "2.53.1",
     {{/e2e}}
     "vue": "^2.1.10",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^4.9.1",
+    "webpack-serve": "^1.0.2"
   },
   "files": [
     "dist/{{ name }}.js",
@@ -101,7 +101,7 @@
     {{#if_eq coverageConfig "codecov"}}
     "coverage": "cat ./coverage/lcov.info",
     {{/if_eq}}
-    "dev": "cross-env BABEL_ENV=test webpack-dev-server --inline --hot --open --content-base ./test/unit/ --config config/webpack.dev.conf.js",
+    "dev": "cross-env BABEL_ENV=test webpack-serve --hot --open --content ./test/unit/ --config config/webpack.dev.conf.js",
     {{#gitbook}}
     "docs": "gitbook serve ./gitbook ./docs",
     "docs:build": "node config/version.js && gitbook build ./gitbook ./docs",

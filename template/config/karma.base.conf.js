@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 const webpackConfig = {
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       exclude: /node_modules|vue\/dist/,
       loader: 'babel-loader'
@@ -29,7 +29,9 @@ module.exports = {
   preprocessors: {
     '../test/unit/index.js': ['webpack', 'sourcemap']
   },
-  webpack: webpackConfig,
+  webpack: Object.assign({
+    mode: 'development',
+  }, webpackConfig),
   webpackMiddleware: {
     noInfo: true
   }

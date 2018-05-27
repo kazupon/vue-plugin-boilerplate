@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
+  mode: 'development',
   entry: 'mocha-loader!./test/unit/index.js',
   output: {
     path: path.resolve(__dirname, '/test/unit'),
@@ -15,12 +16,5 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"development"'
-      }
-    })
-  ],
   devtool: '#eval-source-map'
 }
