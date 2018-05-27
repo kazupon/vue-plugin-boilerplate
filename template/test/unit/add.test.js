@@ -1,18 +1,19 @@
-import Vue from 'vue'
+import { mount } from '@vue/test-utils'
+
+const MyComp = {
+  name: 'my-comp',
+  template: `
+    <p>add: $add(1, 1)</p>
+  `
+}
 
 describe('$add', () => {
-  let vm
-
-  beforeEach(() => {
-    vm = new Vue()
-  })
-
   describe('1 + 1', () => {
-    it('should be 2', done => {
-      nextTick(() => {
-        assert(vm.$add(1, 1) === 2, 'You should be implemented!!')
-      }).then(done)
+    describe('with mount', () => {
+      it('should be 2', () => {
+        const wrapper = mount(MyComp)
+        assert(wrapper.html(), '<p>add: 2</p>')
+      })
     })
   })
 })
-
