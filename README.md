@@ -13,11 +13,11 @@ Boilerplate for Vue.js plugin
 It’s up to you !!
 
 ## :hammer: Using tools
-- Transpiler / Compiler
+- Compiler
+    - TypeScript
+- Transpile
     - babel (for development)
     - buble (for distribution)
-- Type Checker
-    - flowtype
 - Linter
     - eslint
 - Bundler
@@ -32,7 +32,7 @@ It’s up to you !!
 - Test Coverage
     - istanbul
 - Headless Browser
-    - phantomjs
+    - chrome headless
 - End-to-End Test Fremework
     - nightwatch.js
 
