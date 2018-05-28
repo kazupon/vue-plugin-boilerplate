@@ -31,9 +31,6 @@
     "eslint-plugin-vue-libs": "^2.0.1",
     "eslint-plugin-typescript": "^0.12.0",
     "eslint-loader": "^2.0.0",
-    {{#gitbook}}
-    "gitbook-cli": "^2.3.0",
-    {{/gitbook}}
     "mocha": "^4.1.0",
     "mocha-loader": "^1.1.1",
     "karma": "^2.0.2",
@@ -74,6 +71,9 @@
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16",
     "@vue/test-utils": "^1.0.0-beta.16",
+    {{#docs}}
+    "vuepress": "^0.10.0",
+    {{/docs}}
     "webpack": "^4.9.1",
     "webpack-serve": "^1.0.2"
   },
@@ -119,11 +119,10 @@
     "coverage": "cat ./coverage/lcov.info",
     {{/if_eq}}
     "dev": "cross-env BABEL_ENV=test webpack-serve --hot --open --content ./test/unit/ --config config/webpack.dev.conf.js",
-    {{#gitbook}}
-    "docs": "gitbook serve ./gitbook ./docs",
-    "docs:build": "node config/version.js && gitbook build ./gitbook ./docs",
-    "docs:install": "gitbook install ./gitbook",
-    {{/gitbook}}
+    {{#docs}}
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "node config/version.js && vuepress build docs",
+    {{/docs}}
     "lint": "eslint --fix --ext .ts src test",
     {{#sauce}}
     "sauce": "npm run sauce:coolkids && npm run sauce:ie && npm run sauce:mobile",

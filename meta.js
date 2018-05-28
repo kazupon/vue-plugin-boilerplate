@@ -92,9 +92,9 @@ module.exports = {
         { name: 'jshint', value: 'jshint' }
       ]
     },
-    gitbook: {
+    docs: {
       type: 'confirm',
-      message: 'Setup gitbook documentaion?'
+      message: 'Setup documentaion?'
     },
     issue: {
       type: 'confirm',
@@ -112,9 +112,8 @@ module.exports = {
     ".travis.yml": "ciConfig === 'travis'",
     "circle.yml": "ciConfig === 'circleci'",
     "config/karma.coveralls.conf.js": "coverageConfig === 'coveralls'",
-    "gitbook/**/**": 'gitbook',
-    "docs/**/**": 'gitbook',
-    "config/version.js": 'gitbook',
+    "docs/**/**": 'docs',
+    "config/version.js": 'docs',
     ".github/ISSUE_TEMPLATE.md": 'issue',
     "CONTRIBUTING.md": "contribution"
   },

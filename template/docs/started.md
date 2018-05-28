@@ -3,7 +3,7 @@
 > We will be using [ES2015](https://github.com/lukehoban/es6features) in the code samples in the guide.
 
 
-### HTML
+## HTML
 
 ```html
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -14,7 +14,7 @@
 </div>
 ```
 
-### JavaScript
+## JavaScript
 
 ```javascript
 // If using a module system (e.g. via vue-cli), import Vue and {{ classify name }} and then call Vue.use({{ classify name }}).

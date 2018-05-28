@@ -1,6 +1,6 @@
 # Installation
 
-### Direct Download / CDN
+## Direct Download / CDN
 
 https://unpkg.com/{{ name }}/dist/{{ name }}
 
@@ -13,13 +13,17 @@ Include {{ name }} after Vue and it will install itself automatically:
 <script src="https://unpkg.com/{{ name }}/dist/{{ name }}.js"></script>
 ```
 
-### NPM
+## NPM
 
-    $ npm install {{ name }}
+```sh
+$ npm install {{ name }}
+```
 
-### Yarn
+## Yarn
 
-    $ yarn add {{ name }}
+```sh
+$ yarn add {{ name }}
+```
 
 When used with a module system, you must explicitly install the `{{ name }}` via `Vue.use()`:
 
@@ -33,13 +37,16 @@ Vue.use({{ classify name }})
 You don't need to do this when using global script tags.
 
 {{#unless_eq githubAccount ""}}
-### Dev Build
+## Dev Build
 
 You will have to clone directly from GitHub and build `{{ name }}` yourself if
 you want to use the latest dev build.
 
-    $ git clone https://github.com/{{ githubAccount }}/{{ name }}.git node_modules/{{ name }}
-    $ cd node_modules/{{ name }}
-    $ npm install
-    $ npm run build
+```sh
+$ git clone https://github.com/{{ githubAccount }}/{{ name }}.git node_modules/{{ name }}
+$ cd node_modules/{{ name }}
+$ npm install
+$ npm run build
+```
+
 {{/unless_eq}}
