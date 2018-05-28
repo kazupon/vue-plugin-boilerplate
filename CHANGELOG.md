@@ -1,3 +1,20 @@
+<a name="18.0.0"></a>
+# [18.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v17.1.0...v18.0.0) (2018-05-28)
+
+
+### :boom: Breaking changes
+
+* remove flow setup ([7157fb5](https://github.com/kazupon/vue-plugin-boilerplate/commit/7157fb5))
+* switch typescript ([cb8f934](https://github.com/kazupon/vue-plugin-boilerplate/commit/cb8f934))
+
+
+### :zap: Improvements
+
+* upgrade babel 7 ready ([c946d30](https://github.com/kazupon/vue-plugin-boilerplate/commit/c946d30))
+* upgrade vue releated templates ([98b3123](https://github.com/kazupon/vue-plugin-boilerplate/commit/98b3123))
+
+
+
 <a name="17.1.0"></a>
 # [17.1.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v17.0.0...v17.1.0) (2017-09-08)
 
