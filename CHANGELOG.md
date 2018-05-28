@@ -1,3 +1,13 @@
+<a name="19.0.0"></a>
+# [19.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v18.0.0...v19.0.0) (2018-05-28)
+
+
+### :boom: Breaking changes
+
+* **docs:** switch to vuepress from gitbook ([435432f](https://github.com/kazupon/vue-plugin-boilerplate/commit/435432f))
+
+
+
 <a name="18.0.0"></a>
 # [18.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v17.1.0...v18.0.0) (2018-05-28)
 
