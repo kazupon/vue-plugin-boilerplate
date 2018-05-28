@@ -1,3 +1,5 @@
+import * as mocha from 'mocha'
+import assert from 'power-assert'
 import { mount } from '@vue/test-utils'
 
 const MyComp = {

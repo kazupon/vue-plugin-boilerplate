@@ -12,7 +12,10 @@
   },
   {{/unless_eq}}
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.48",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.49",
+    "@babel/preset-typescript": "^7.0.0-beta.49",
     "@vue/babel-preset-app": "^3.0.0-beta.11",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^8.0.0-beta.3",
@@ -26,6 +29,7 @@
     "cross-env": "^5.1.6",
     "eslint": "^4.19.0",
     "eslint-plugin-vue-libs": "^2.0.1",
+    "eslint-plugin-typescript": "^0.12.0",
     "eslint-loader": "^2.0.0",
     {{#gitbook}}
     "gitbook-cli": "^2.3.0",
@@ -60,6 +64,13 @@
     "nightwatch-helpers": "^1.2.0",
     "selenium-server": "2.53.1",
     {{/e2e}}
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^10.1.2",
+    "@types/power-assert": "^1.5.0",
+    "ts-loader": "^4.3.0",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
+    "typescript": "^2.8.3",
+    "typescript-eslint-parser": "^15.0.0",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16",
     "@vue/test-utils": "^1.0.0-beta.16",
@@ -70,6 +81,8 @@
     "dist/{{ name }}.js",
     "dist/{{ name }}.min.js",
     "dist/{{ name }}.common.js",
+    "dist/{{ name }}.esm.js",
+    "types",
     "src"
   ],
   {{#unless_eq githubAccount ""}}
@@ -78,6 +91,7 @@
   "main": "dist/{{ name }}.common.js",
   "module": "dist/{{ name }}.esm.js",
   "unpkg": "dist/{{ name }}.js",
+  "types": "types/index.d.ts",
   "keywords": [
     "plugin",
     "vue",
@@ -85,7 +99,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">= 6.0"
+    "node": ">= 8.0"
   },
   {{#unless_eq githubAccount ""}}
   "repository": {
@@ -94,12 +108,13 @@
   },
   {{/unless_eq}}
   "scripts": {
-    "build": "node config/build.js",
+    "build": "npm run build:ts && node config/build.js",
+    "build:ts": "tsc -p src",
     {{#conventional}}
     "changelog": "conventional-changelog -i CHANGELOG.md -s {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     "release": "conventional-github-releaser {{#unless_eq conventionalConfig "none"}}-p {{ conventionalConfig }}{{/unless_eq}}{{#if_eq conventionalConfig "none"}}-n ./config/convention.js{{/if_eq}}",
     {{/conventional}}
-    "clean": "rm -rf coverage && rm -rf dist/*.js* && rm ./*.log",
+    "clean": "rm -rf coverage && rm -rf lib/*.js* && rm -rf types/*.d.ts* && rm -rf dist/*.js* && rm -rf ./*.log",
     {{#if_eq coverageConfig "codecov"}}
     "coverage": "cat ./coverage/lcov.info",
     {{/if_eq}}
@@ -109,7 +124,7 @@
     "docs:build": "node config/version.js && gitbook build ./gitbook ./docs",
     "docs:install": "gitbook install ./gitbook",
     {{/gitbook}}
-    "lint": "eslint --fix src test config",
+    "lint": "eslint --fix --ext .ts src test",
     {{#sauce}}
     "sauce": "npm run sauce:coolkids && npm run sauce:ie && npm run sauce:mobile",
     "sauce:coolkids": "karma start config/karma.sauce.conf.js -- 0",

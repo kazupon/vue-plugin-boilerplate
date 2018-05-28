@@ -1,15 +1,4 @@
-const webpack = require('webpack')
-
-const webpackConfig = {
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules|vue\/dist/,
-      loader: 'babel-loader'
-    }]
-  },
-  devtool: '#inline-source-map'
-}
+const webpackConfig = require('./webpack.common.conf')
 
 module.exports = {
   basePath: '',
@@ -23,7 +12,7 @@ module.exports = {
     '../test/unit/index.js': ['webpack', 'sourcemap']
   },
   webpack: Object.assign({
-    mode: 'development',
+    devtool: '#inline-source-map'
   }, webpackConfig),
   webpackMiddleware: {
     noInfo: true

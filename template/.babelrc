@@ -1,6 +1,13 @@
 {
-  "presets": ["@vue/app"],
-  "plugins": ["babel-plugin-espower"],
+  "presets": [
+    "@babel/typescript",
+    "@vue/app"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    "babel-plugin-espower"
+  ],
   "env": {
     "test": {
       "plugins": ["istanbul"],

@@ -15,19 +15,19 @@ const moduleName = classify(pack.name)
 
 const entries = {
   commonjs: {
-    entry: 'src/index.js',
+    entry: 'lib/index.js',
     dest: `dist/${pack.name}.common.js`,
     format: 'cjs',
     banner
   },
   esm: {
-    entry: 'src/index.js',
+    entry: 'lib/index.js',
     dest: `dist/${pack.name}.esm.js`,
     format: 'es',
     banner
   },
   production: {
-    entry: 'src/index.js',
+    entry: 'lib/index.js',
     dest: `dist/${pack.name}.min.js`,
     format: 'umd',
     env: 'production',
@@ -35,7 +35,7 @@ const entries = {
     banner
   },
   development: {
-    entry: 'src/index.js',
+    entry: 'lib/index.js',
     dest: `dist/${pack.name}.js`,
     format: 'umd',
     env: 'development',
