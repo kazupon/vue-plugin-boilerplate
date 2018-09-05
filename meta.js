@@ -94,7 +94,7 @@ module.exports = {
     },
     docs: {
       type: 'confirm',
-      message: 'Setup documentaion?'
+      message: 'Setup documentation?'
     },
     issue: {
       type: 'confirm',
