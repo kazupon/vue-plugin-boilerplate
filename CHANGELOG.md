@@ -1,3 +1,13 @@
+<a name="20.0.0"></a>
+# [20.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v19.0.0...v20.0.0) (2018-09-24)
+
+
+### :boom: Breaking changes
+
+* back to webpack-dev-server ([60696de](https://github.com/kazupon/vue-plugin-boilerplate/commit/60696de))
+
+
+
 <a name="19.0.0"></a>
 # [19.0.0](https://github.com/kazupon/vue-plugin-boilerplate/compare/v18.0.0...v19.0.0) (2018-05-28)
 
